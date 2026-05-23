@@ -18,7 +18,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from database import create_tables
-from routers import modules, scenarios, leaderboard, matching, triage, radio, violations, adventure
+from routers import modules, scenarios, leaderboard, matching, triage, radio, violations, adventure, volunteers, reminders
 
 logging.basicConfig(level=logging.INFO)
 
@@ -44,6 +44,8 @@ app.include_router(radio.router, tags=["games"])
 app.include_router(violations.router, tags=["games"])
 app.include_router(adventure.router, tags=["games"])
 app.include_router(leaderboard.router, tags=["leaderboard"])
+app.include_router(volunteers.router)
+app.include_router(reminders.router)
 
 
 @app.on_event("startup")
