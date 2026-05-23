@@ -1,0 +1,84 @@
+id: safety-marshal
+name: Safety Marshal
+description: >
+  Safety marshals keep participants safe across the venue. They monitor
+  crowds, respond to incidents, and act as the eyes and ears of the medical
+  and security teams.
+icon: 🦺
+color: amber
+
+knowledge:
+  - title: Radio Discipline
+    content: >
+      All marshals carry a radio tuned to channel 2. Use short, clear
+      messages. Always begin a transmission with your call sign and the
+      person you are calling (e.g. "Marshal 3 to Lead, over"). Wait for
+      acknowledgement before continuing. Never use the radio for casual
+      chatter — channel 2 is reserved for operational traffic only.
+    tags: [procedure, communication, critical]
+
+  - title: Reporting an Incident
+    content: >
+      For any incident, report WHO, WHAT, WHERE, and WHEN over the radio,
+      in that order. Stay on scene until relieved by a senior marshal or
+      medical. Do not move an injured person unless they are in immediate
+      further danger. Begin a written incident report within 30 minutes of
+      the event ending.
+    tags: [procedure, escalation, critical]
+
+  - title: Crowd Density Monitoring
+    content: >
+      A space is "comfortable" at under 2 people per square metre, "busy"
+      between 2 and 4, and "critical" above 4. At "critical", radio Lead
+      immediately and begin redirecting incoming participants to alternate
+      areas. Never wait for an explicit instruction once you observe a
+      critical density.
+    tags: [safety, procedure]
+
+  - title: Medical Escalation
+    content: >
+      Any loss of consciousness, suspected fracture, allergic reaction,
+      chest pain, or heavy bleeding is an automatic medical escalation —
+      radio "Medical to <location>" and stay with the patient. For minor
+      cuts, scrapes, and headaches, escort the participant to the first-aid
+      station yourself if they can walk.
+    tags: [safety, escalation, critical]
+
+  - title: Fire and Evacuation
+    content: >
+      On hearing a fire alarm, calmly direct everyone to the nearest marked
+      exit. Do not allow anyone to use the elevators. Sweep your assigned
+      zone, then proceed to the muster point in the south parking lot and
+      report your zone status to Lead. Never re-enter the building until
+      cleared by the fire marshal.
+    tags: [safety, critical]
+
+  - title: Lost Property and Lost People
+    content: >
+      Lost property is logged at the info desk, not handled in the field.
+      A lost child or vulnerable adult, however, is treated as an
+      immediate radio escalation — give a description and last-seen
+      location, and remain at the spot they were last seen.
+    tags: [policy, escalation]
+
+rules:
+  - Never move an injured person unless they are in further danger.
+  - Always begin a radio call with your call sign and who you are calling.
+  - Channel 2 is for operational traffic only — no casual chatter.
+  - Escalate any loss of consciousness, fracture, allergy, chest pain, or heavy bleeding as a medical immediately.
+  - During an evacuation, never use the elevators and never re-enter until cleared.
+  - A missing child or vulnerable adult is always an immediate radio escalation.
+
+glossary:
+  - term: Call sign
+    definition: The short identifier each marshal is assigned for the day, e.g. "Marshal 3" or "Lead".
+  - term: Over
+    definition: Spoken at the end of a transmission to signal you are done speaking and waiting for a reply.
+  - term: Out
+    definition: Spoken at the end of a conversation to signal the exchange is complete and the channel is free.
+  - term: Muster point
+    definition: The pre-agreed safe gathering location used during an evacuation — the south parking lot.
+  - term: Lead
+    definition: The shift supervisor coordinating all marshals on the channel.
+  - term: Sweep
+    definition: Walking through an assigned zone to confirm it is empty during an evacuation.

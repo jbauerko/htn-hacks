@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #faf7ff;
+  --foreground: #1a1330;
 }
 
 @theme inline {
@@ -14,13 +14,54 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0e0820;
+    --foreground: #f5f0ff;
   }
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(circle at 0% 0%, rgba(255, 200, 220, 0.35), transparent 40%),
+    radial-gradient(circle at 100% 0%, rgba(180, 200, 255, 0.35), transparent 40%),
+    radial-gradient(circle at 50% 100%, rgba(200, 255, 220, 0.3), transparent 40%),
+    var(--background);
+  background-attachment: fixed;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
+
+/* ---------- Playful keyframes ---------- */
+@keyframes pop {
+  0%   { transform: scale(0.92); opacity: 0; }
+  60%  { transform: scale(1.04); opacity: 1; }
+  100% { transform: scale(1);    opacity: 1; }
+}
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%      { transform: translateX(-6px); }
+  40%      { transform: translateX(6px); }
+  60%      { transform: translateX(-4px); }
+  80%      { transform: translateX(4px); }
+}
+@keyframes float {
+  0%   { transform: translateY(8px);  opacity: 0; }
+  100% { transform: translateY(-40px); opacity: 0; }
+  40%  { opacity: 1; }
+}
+@keyframes confetti-fall {
+  0%   { transform: translate3d(var(--x, 0), -10vh, 0) rotate(0deg); opacity: 1; }
+  100% { transform: translate3d(calc(var(--x, 0) + var(--drift, 0px)), 110vh, 0) rotate(720deg); opacity: 0.9; }
+}
+@keyframes pulse-ring {
+  0%   { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.5); }
+  100% { box-shadow: 0 0 0 24px rgba(99, 102, 241, 0); }
+}
+@keyframes countdown-bar {
+  0%   { transform: scaleX(1); }
+  100% { transform: scaleX(0); }
+}
+
+.anim-pop      { animation: pop 220ms cubic-bezier(.2,.9,.3,1.2) both; }
+.anim-shake    { animation: shake 380ms ease-in-out; }
+.anim-float    { animation: float 1100ms ease-out forwards; }
+.anim-pulse    { animation: pulse-ring 1500ms ease-out infinite; }

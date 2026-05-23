@@ -1,0 +1,80 @@
+id: food-and-beverage
+name: Food & Beverage
+description: >
+  Food & beverage volunteers keep hungry hackers fueled. They serve meals,
+  manage allergens, and keep the snack tables stocked, clean, and safe.
+icon: 🍕
+color: rose
+
+knowledge:
+  - title: Allergen Awareness
+    content: >
+      Every dish on the line has a labelled allergen card listing the "big
+      eight" allergens (peanuts, tree nuts, milk, eggs, soy, wheat, fish,
+      shellfish). If a participant asks about an ingredient that is not on
+      the card, do NOT guess — fetch the F&B lead or check the binder at
+      the back of the station before serving.
+    tags: [safety, critical]
+
+  - title: Serving Etiquette
+    content: >
+      Always wear gloves at the serving line and change them whenever you
+      switch dishes. Use the provided serving utensils — never your hands,
+      and never a participant's own utensil. Greet each participant and
+      offer the dish before scooping; some will decline for dietary reasons.
+    tags: [procedure]
+
+  - title: Restocking and Rotation
+    content: >
+      Restock at 25% remaining, not at empty. Place new trays UNDER the
+      old ones so older food is served first (first-in, first-out). Discard
+      any hot food that has sat below 60°C for more than two hours — no
+      exceptions, even if it looks fine.
+    tags: [procedure, safety]
+
+  - title: Spills and Cleanup
+    content: >
+      Spills are an immediate slip hazard. Stand over the spill and call
+      a teammate to bring the wet-floor sign and a mop. Do not leave the
+      spill unattended even for a moment. Wipe down serving surfaces every
+      30 minutes during service.
+    tags: [safety, procedure]
+
+  - title: Special Diets
+    content: >
+      Vegan, vegetarian, halal, kosher, and gluten-free meals are pre-packed
+      in labelled boxes at the side station and require the participant to
+      show their dietary wristband. Do not let participants self-serve from
+      these boxes — always hand the box over personally.
+    tags: [policy, procedure]
+
+  - title: End-of-Service Breakdown
+    content: >
+      At the end of service, hot food is moved to the kitchen for the
+      donation pickup. Cold prepped items go into the labelled fridge.
+      Wipe all surfaces with sanitiser, fold and stack the chafing dish
+      frames, and bag all trash. The station is not "closed" until the F&B
+      lead has signed off.
+    tags: [procedure]
+
+rules:
+  - Never guess about ingredients — always check the allergen card or binder.
+  - Always wear gloves on the line and change them when switching dishes.
+  - Restock at 25% remaining, not at empty.
+  - Discard hot food after two hours below 60°C — no exceptions.
+  - Never leave a spill unattended, even briefly.
+  - Special-diet boxes are handed over personally, never self-served.
+
+glossary:
+  - term: Big eight
+    definition: The eight major food allergens that must always be labelled — peanuts, tree nuts, milk, eggs, soy, wheat, fish, shellfish.
+  - term: FIFO
+    definition: First-in, first-out — always serve older trays before newer ones to keep food fresh.
+  - term: Chafing dish
+    definition: The metal frame with a water bath and fuel canister used to keep food hot on the serving line.
+  - term: Allergen card
+    definition: The small printed card placed next to each dish listing the big-eight allergens present in it.
+  - term: Dietary wristband
+    definition: The coloured wristband participants with special diets receive at registration — required before handing out a special-diet box.
+  - term: F&B lead
+    definition: The shift supervisor in charge of the food and beverage station and the only person who can sign off on closing.

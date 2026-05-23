@@ -1,14 +1,25 @@
 import logging
 import os
+import pathlib
 
 from dotenv import load_dotenv
+
+# Load .env from this file's directory so it works regardless of cwd.
+# override=True ensures the .env wins over any stale shell var.
+_dotenv_path = pathlib.Path(__file__).parent / ".env"
+_loaded = load_dotenv(_dotenv_path, override=True)
+logging.basicConfig(level=logging.INFO)
+logging.info(
+    ".env at %s -> %s | ANTHROPIC_API_KEY present: %s",
+    _dotenv_path, _loaded, bool(os.getenv("ANTHROPIC_API_KEY")),
+)
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from database import create_tables
-from routers import modules, scenarios, leaderboard
+from routers import modules, scenarios, leaderboard, matching, triage, radio, violations
 
-load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 app = FastAPI(
@@ -26,7 +37,11 @@ app.add_middleware(
 )
 
 app.include_router(modules.router, tags=["modules"])
-app.include_router(scenarios.router, tags=["scenarios"])
+app.include_router(scenarios.router, tags=["games"])
+app.include_router(matching.router, tags=["games"])
+app.include_router(triage.router, tags=["games"])
+app.include_router(radio.router, tags=["games"])
+app.include_router(violations.router, tags=["games"])
 app.include_router(leaderboard.router, tags=["leaderboard"])
 
 

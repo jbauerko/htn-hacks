@@ -1,0 +1,187 @@
+"use client";
+
+import Link from "next/link";
+import { theme } from "@/lib/colors";
+import type { GameMeta } from "@/lib/games";
+
+/**
+ * Header bar shown on every game page. Shows the back arrow, role icon,
+ * game title, and a live score readout.
+ */
+export function GameTopBar({
+  moduleId,
+  moduleName,
+  moduleColor,
+  moduleIcon,
+  game,
+  score,
+  total,
+  best,
+}: {
+  moduleId: string;
+  moduleName: string;
+  moduleColor: string;
+  moduleIcon: string;
+  game: GameMeta;
+  score: number;
+  total?: string | number;   // e.g. "3 / 10" — position indicator
+  best?: number;
+}) {
+  const t = theme(moduleColor);
+  return (
+    <div className="sticky top-0 z-30 backdrop-blur border-b border-zinc-200/70 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70">
+      <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-3">
+        <Link
+          href={`/modules/${moduleId}`}
+          className={`grid h-10 w-10 place-items-center rounded-full text-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-800`}
+          aria-label="Back to games"
+        >
+          ←
+        </Link>
+
+        <div className={`grid h-10 w-10 place-items-center rounded-xl text-xl ${t.bgChip}`}>
+          {moduleIcon}
+        </div>
+
+        <div className="min-w-0 flex-1">
+          <div className="truncate text-sm font-medium text-zinc-500 dark:text-zinc-400">
+            {moduleName}
+          </div>
+          <div className="flex items-center gap-2">
+            <span className="text-base font-bold">{game.emoji} {game.title}</span>
+            <span className={`hidden sm:inline rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wider ${t.bgChip} ${t.textStrong}`}>
+              {game.badge}
+            </span>
+          </div>
+        </div>
+
+        <div className="flex items-center gap-3 text-right">
+          {typeof best === "number" && best > 0 && (
+            <div className="hidden md:block">
+              <div className="text-[10px] uppercase tracking-wider text-zinc-400">Best</div>
+              <div className="text-sm font-bold text-zinc-500">{best}</div>
+            </div>
+          )}
+          <div>
+            <div className="text-[10px] uppercase tracking-wider text-zinc-400">Score</div>
+            <div className={`text-xl font-extrabold ${t.textStrong} tabular-nums`}>
+              {score}
+            </div>
+          </div>
+          {total !== undefined && (
+            <div className="hidden sm:block">
+              <div className="text-[10px] uppercase tracking-wider text-zinc-400">Pos</div>
+              <div className="text-sm font-bold text-zinc-500 tabular-nums">{total}</div>
+            </div>
+          )}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/**
+ * Final score screen shown when a game is done.
+ */
+export function ScoreSummary({
+  moduleId,
+  moduleColor,
+  game,
+  score,
+  best,
+  isNewBest,
+  correct,
+  total,
+  onPlayAgain,
+}: {
+  moduleId: string;
+  moduleColor: string;
+  game: GameMeta;
+  score: number;
+  best: number;
+  isNewBest: boolean;
+  correct: number;
+  total: number;
+  onPlayAgain: () => void;
+}) {
+  const t = theme(moduleColor);
+  const accuracy = total > 0 ? Math.round((correct / total) * 100) : 0;
+
+  let title = "Nice work!";
+  let blurb = "You're getting the hang of it.";
+  if (accuracy >= 90) {
+    title = "Outstanding!";
+    blurb = "You're shift-ready. Go pick another game.";
+  } else if (accuracy >= 70) {
+    title = "Solid run.";
+    blurb = "A few more reps and you'll have this locked in.";
+  } else if (accuracy < 40) {
+    title = "Tough round.";
+    blurb = "Read the briefing again, then come back swinging.";
+  }
+
+  return (
+    <div className="mx-auto mt-10 max-w-xl px-4 anim-pop">
+      <div className={`rounded-3xl border-2 ${t.borderStrong} bg-white dark:bg-zinc-900 p-8 text-center shadow-xl`}>
+        <div className={`mx-auto grid h-20 w-20 place-items-center rounded-2xl text-4xl ${t.bgGradient} text-white shadow-lg`}>
+          {game.emoji}
+        </div>
+        <div className="mt-5 text-2xl font-extrabold">{title}</div>
+        <div className="text-sm text-zinc-500 dark:text-zinc-400">{blurb}</div>
+
+        <div className="mt-6 grid grid-cols-3 gap-3">
+          <Stat label="Score" value={String(score)} accent={t.textStrong} />
+          <Stat label="Accuracy" value={`${accuracy}%`} accent={t.textStrong} />
+          <Stat label="Best" value={String(best)} accent={isNewBest ? "text-amber-500" : "text-zinc-500"} />
+        </div>
+
+        {isNewBest && (
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-700 anim-pop">
+            ⭐ New personal best!
+          </div>
+        )}
+
+        <div className="mt-6 flex flex-col gap-2 sm:flex-row sm:justify-center">
+          <button
+            onClick={onPlayAgain}
+            className={`rounded-full ${t.bgSolid} ${t.bgSolidHover} px-6 py-3 font-bold text-white shadow-md transition`}
+          >
+            Play again
+          </button>
+          <Link
+            href={`/modules/${moduleId}`}
+            className="rounded-full border-2 border-zinc-200 px-6 py-3 font-bold text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
+          >
+            Pick another game
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Stat({ label, value, accent }: { label: string; value: string; accent: string }) {
+  return (
+    <div className="rounded-2xl bg-zinc-50 dark:bg-zinc-800 p-3">
+      <div className="text-[10px] uppercase tracking-wider text-zinc-400">{label}</div>
+      <div className={`text-xl font-extrabold tabular-nums ${accent}`}>{value}</div>
+    </div>
+  );
+}
+
+/**
+ * Small popping +N / -N badge that floats up from a position.
+ * Use as a list of recent deltas you append to.
+ */
+export function ScoreFloat({ value }: { value: number }) {
+  const positive = value > 0;
+  return (
+    <span
+      className={`anim-float pointer-events-none absolute text-2xl font-extrabold ${
+        positive ? "text-emerald-500" : "text-rose-500"
+      }`}
+    >
+      {positive ? "+" : ""}{value}
+    </span>
+  );
+}
