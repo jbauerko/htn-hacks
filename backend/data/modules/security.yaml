@@ -1,0 +1,72 @@
+id: security
+name: Security Volunteer
+description: >
+  Security volunteers staff the entrances to check badges and wristbands, redirect
+  early-arriving volunteers, and politely refuse entry to anyone without proper
+  identification.
+icon: 🛡️
+color: rose
+
+knowledge:
+  - title: Your Leads and Required Training
+    content: >
+      Your Volunteer Leads are Evelina Zheng (647-881-3162) and Nadeen Findakly
+      (416-227-1340). Review the Floor Patrol and Security General Training
+      Slides before your shift. Security and Floor Patrol share training because
+      the roles overlap and you may be moved between them.
+    tags: [procedure]
+
+  - title: Your Post — The Entrance
+    content: >
+      Your job is the entrance, and you stay at the entrance. The core task is
+      checking everyone who enters for a valid badge and wristband. If you leave
+      your post, the entrance is unguarded — only step away when relieved or
+      with VL approval.
+    tags: [critical, operations]
+
+  - title: Checking Badges and Wristbands
+    content: >
+      Every person entering the venue must have a Hack the North badge and any
+      required wristband on them. Verify both before letting anyone through. If
+      someone's identification is missing or does not match what is required for
+      that entry, refuse entry politely and explain what they need.
+    tags: [procedure, critical]
+
+  - title: Early-Arriving Volunteers
+    content: >
+      If a volunteer arrives at the entrance more than one hour before their
+      shift starts, redirect them to the Help Desk — they cannot wait at or
+      enter through your post. In special circumstances (a volunteer arrives
+      very late at night with nowhere to stay, for example), use your judgment
+      and let them in, but flag it to your VL.
+    tags: [policy]
+
+  - title: People Without Identification
+    content: >
+      Politely tell people who arrive without proper identification that they
+      may not enter the premises. Stay polite even when refusing. Do not let
+      anyone slip through because they look like they belong — if there is no
+      badge, there is no entry.
+    tags: [policy, critical]
+
+  - title: Aggressive People
+    content: >
+      If someone becomes aggressive at the entrance, or someone tries to enter
+      without identification and will not leave, call HQ or your VL immediately
+      and notify them of the situation. Do not try to physically stop anyone
+      or argue with an escalating person — your safety matters more than
+      keeping someone out for a few extra seconds while help arrives.
+    tags: [safety, escalation, critical]
+
+rules:
+  - Stay at the entrance for your entire shift unless properly relieved.
+  - Refuse entry to anyone without a valid badge — no exceptions ever.
+  - Redirect volunteers arriving more than one hour early to the Help Desk.
+  - Never try to physically restrain an aggressive person — call HQ or your VL.
+  - Stay polite even when refusing entry; the manner matters as much as the outcome.
+
+glossary:
+  - term: Wristband
+    definition: A color-coded band issued at check-in that supplements the badge for certain access points. Required for entry alongside the badge.
+  - term: HQ
+    definition: Volunteer HQ (E5 room 2004) — reachable by phone or Slack when you need backup at the entrance.

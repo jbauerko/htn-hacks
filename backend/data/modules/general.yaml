@@ -1,0 +1,211 @@
+id: general
+name: General Volunteer Info
+description: >
+  Baseline knowledge every Hack the North 2025 volunteer needs regardless of role:
+  expectations, boundaries, check-in/out, communication, and the scanner tool.
+icon: 🧭
+color: sky
+
+knowledge:
+  - title: Your Role as a Public Face
+    content: >
+      As a volunteer you are helping run Canada's biggest hackathon for over 1000
+      hackers, and you are one of the most visible public-facing people at the event.
+      Be polite and courteous with everyone you interact with, regardless of who they
+      are or how they treat you. It is completely okay to admit when you do not know
+      something — ask in the #volunteer-lounge Slack channel rather than guessing.
+      The goal across every role is to empower hackers and make their experience the
+      best it can be, so use common sense in service of that goal.
+    tags: [policy]
+
+  - title: What to Bring to Every Shift
+    content: >
+      For every shift you must bring physical photo ID, a charged phone, and a
+      willingness to help. The ID is required because you drop it at the Help Desk
+      to claim your badge — this is how the event enforces the rule that volunteers
+      are only in the venue during their shifts. Without ID you cannot get a badge,
+      and without a badge and t-shirt you cannot volunteer.
+    tags: [procedure, critical]
+
+  - title: Arrival Time
+    content: >
+      Aim to arrive 15 minutes before the start of your shift. You will only be
+      allowed into the Volunteer HQ 15 minutes before your shift starts, not earlier.
+      If you arrive more than one hour before your shift, security will redirect you
+      to the Help Desk and you will need to come back later.
+    tags: [procedure]
+
+  - title: Checking In on Friday Before 11pm
+    content: >
+      If you arrive on Friday September 13th before 11:00pm, do not enter the
+      building. Go outside to the RBC Oasis Tent where all registration (sponsors,
+      hackers, volunteers) is being handled, and follow the posted signs to the
+      volunteer queue. After 11:00pm on Friday, and at all other times during the
+      event, you check in inside the building at the Help Desk instead.
+    tags: [procedure]
+
+  - title: Checking In at Any Other Time
+    content: >
+      Outside the Friday-before-11pm window, head inside E7 and go directly to the
+      Help Desk, which is right beside the large E7 Engineering Sign entrance. If a
+      door security volunteer stops you, tell them you are signing in for a shift.
+      Identify yourself at the Help Desk as a volunteer that needs to be checked in,
+      hand over your photo ID, and you will receive your badge, sticker, and t-shirt.
+    tags: [procedure]
+
+  - title: After Check-In — Get to Volunteer HQ
+    content: >
+      Volunteer HQ is E5 room 2004. From the E7 main entrance, go up the red main
+      staircase to floor 2, turn right, then walk until you see another hallway and
+      turn right again. The HQ is at the end of the hallway on the left. There are
+      floor signs to help, and you must be wearing both your badge and t-shirt
+      before you start volunteering — both are required.
+    tags: [procedure]
+
+  - title: Checking Out
+    content: >
+      Before 11:00pm on Friday, check out at the RBC Oasis Tent where you originally
+      checked in. At any other time, return to the Help Desk inside E7. Exchange
+      your badge for your ID — that is how you reclaim it. Do not leave the event
+      without checking out, or you will not get your ID back.
+    tags: [procedure, critical]
+
+  - title: Where Volunteers May and May Not Go
+    content: >
+      Volunteers are only allowed in the venue during their shifts. You are always
+      allowed in the Volunteer HQ, and you may go wherever your shift duties require.
+      You are NOT allowed in the sponsor bay, the hacker sleeping area, or any
+      general restricted area at any time. These areas are monitored. You may take
+      snacks from the volunteer HQ (one snack per person, please).
+    tags: [policy, critical]
+
+  - title: Slack Channels You Need to Know
+    content: >
+      You should have received an email invite to the Hack the North Slack — download
+      the app. Three channels matter most. #volunteer-lounge is where you post
+      questions during shifts and where shift-specific announcements appear; a
+      Volunteer Lead or Adam will respond. #announcement-volunteer carries general
+      reminders relevant to all volunteers. #questions is the Q&A chatbot for
+      general questions. If you cannot access Slack, email adam@hackthenorth.com.
+    tags: [communication]
+
+  - title: Reporting Concerns
+    content: >
+      For concerns about shift logistics or event logistics in general, contact Adam
+      Selim (Volunteer Organizer) via Slack DM or adam@hackthenorth.com. While on
+      shift, contact your Volunteer Lead in person or via Slack for any concern that
+      arises. If the concern is about a Volunteer Lead or another Organizer
+      themselves, go directly to Adam — do not raise it through the person it
+      concerns.
+    tags: [escalation, policy]
+
+  - title: The Buddy System
+    content: >
+      Volunteering at a big event alone can be intimidating, so you may be paired
+      with a buddy. The team tries to place buddies in the same role category, but
+      it is not guaranteed. To stay together during your actual shift you must
+      advocate for it by telling your VL at the start of the shift — but be aware
+      that VLs may still split buddies up if positions need to be filled. Watch out
+      for each other and ask your buddy first if you forget something.
+    tags: [operations]
+
+  - title: Attending Workshops as a Volunteer
+    content: >
+      Volunteers are welcome to attend workshops when they are not on shift. If
+      there is a workshop you want to attend, ask your VL — do not just show up.
+      This is part of the event's effort to support volunteers as part of the
+      community, not just labour.
+    tags: [policy]
+
+  - title: Badges Required for Everyone in E5/E7
+    content: >
+      Anyone attending Hack the North must have a badge with an associated QR code
+      on them at all times. If you see someone in E5 or E7 without a visible badge,
+      politely ask them to display it or to leave. This applies regardless of who
+      they appear to be. Visitor badges in particular do not grant access to events
+      — only specific badge types do.
+    tags: [policy, critical, safety]
+
+  - title: Scanner Tool — What It Is and How to Access It
+    content: >
+      Scanner Tool has two main use cases: registration (assigning a badge to a
+      person) and event redemption (checking attendees into an event). To use it
+      you need a Hack the North account. Go to my.hackthenorth.com, log in, and
+      open the Scanner Tool from your dashboard. If you have never volunteered with
+      HTN before, use Forgot Password with the email you signed up with to set your
+      password. Set this up BEFORE your first shift, not during it.
+    tags: [procedure, critical]
+
+  - title: Scanner Tool Technical Issues
+    content: >
+      For Scanner Tool account or login problems, contact Daniel Chen on Slack or
+      at daniel.chen@hackthenorth.com. For in-event Scanner Tool problems during a
+      shift, go to the Help Desk or ask your VL. Badge codes are always a string
+      of 4 words separated by hyphens — if a code is not in that format, it is
+      invalid and you should get an organizer to help.
+    tags: [escalation, procedure]
+
+  - title: Event Redemption Check-in States
+    content: >
+      When you scan an attendee into an event, four states are possible. Green
+      check mark ("Check-in success") means it worked. Green check mark
+      ("Check-in success again") means this attendee can claim the event multiple
+      times (food usually) and this is a valid extra check-in. Blue check mark
+      ("Already checked in") means they have already been counted and you should
+      not let them through again unless an organizer has manually enabled extra
+      servings. Red error means the badge is invalid — send them to the Help Desk
+      or ask an organizer.
+    tags: [procedure, critical]
+
+  - title: Re-Scanning Attendees
+    content: >
+      Even if someone has already been checked in for an event and just stepped
+      out for the bathroom or a phone call, scan them again on every entry. The
+      system handles this correctly — your job is just to scan every entry, not
+      to remember who came in before. Holding the phone camera near the ground
+      and making sure only one badge is in view prevents accidental multi-scans.
+    tags: [procedure]
+
+  - title: Networking Tool
+    content: >
+      The Networking Tool lets you exchange contact info with hackers and other
+      attendees by scanning each other's badges. Set up your profile (name,
+      pronouns, bio, social links) on the Networking tab of your dashboard before
+      the event. Anything you put there is visible to anyone who scans your badge,
+      so only add links you are comfortable sharing publicly. Scans are timestamped
+      and saved so you can follow up after the event.
+    tags: [communication]
+
+rules:
+  - Bring photo ID, a charged phone, your badge, and t-shirt to every shift.
+  - Never enter the sponsor bay, hacker sleeping area, or restricted zones.
+  - Always check out by exchanging your badge for your ID before leaving the event.
+  - Anyone in E5/E7 without a visible badge must be asked to show one or leave.
+  - Escalate concerns about a VL or Organizer directly to Adam, never through that person.
+  - Tell your VL before taking any break — never just disappear from your post.
+  - Leave the building after your shift unless your next shift is within an hour.
+  - Take only one snack at a time from the Volunteer HQ.
+
+glossary:
+  - term: E7
+    definition: Engineering 7 at the University of Waterloo — the main building hosting Hack the North 2025.
+  - term: E5
+    definition: Engineering 5 — connected to E7 and home to Volunteer HQ (room 2004) and additional hacking space.
+  - term: Volunteer HQ
+    definition: E5 room 2004 — the volunteer rest and staging area where you may always go, including for snacks.
+  - term: Help Desk
+    definition: The check-in counter just inside the E7 main entrance, beside the large Engineering Sign — where you swap ID for badge at non-Friday-evening times.
+  - term: RBC Oasis Tent
+    definition: The outdoor registration tent used by all attendees (volunteers included) until 11pm on Friday September 13th.
+  - term: VL
+    definition: Volunteer Lead — your direct point of contact during shifts.
+  - term: CRT
+    definition: Campus Response Team — the on-campus first-aid and emergency response service. Contacted via walkie-talkie or through an organizer.
+  - term: Badge
+    definition: The lanyard ID with a QR code that every attendee (hacker, sponsor, volunteer, visitor) must wear visibly at all times. Different colors indicate different roles.
+  - term: Scanner Tool
+    definition: The web app at my.hackthenorth.com used for registration check-in and event redemption (checking attendees into individual events).
+  - term: Networking Tool
+    definition: The dashboard feature that lets you exchange profile info and social links with other attendees by scanning their badges.
+  - term: Lazaridis Hall
+    definition: The building hosting Opening Ceremonies (8:00pm) and Closing Ceremonies (2:30pm), reached by walking from E7.

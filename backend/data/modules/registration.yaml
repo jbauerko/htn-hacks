@@ -1,0 +1,111 @@
+id: registration
+name: Registration Volunteer
+description: >
+  Registration volunteers are the first face hackers see — they verify identities,
+  assign badges, distribute swag and t-shirts, and set a welcoming tone for the
+  whole event.
+icon: 📋
+color: indigo
+
+knowledge:
+  - title: Your Lead and Required Training
+    content: >
+      Your Volunteer Lead is Carolyn Zhang (613-879-5188). Review the Registration
+      Volunteer Training Slides before your shift. You MUST bring a laptop —
+      registration runs from the laptop-based Scanner Tool, not from your phone,
+      and you cannot do your job without one.
+    tags: [procedure, critical]
+
+  - title: The Four Registration Sub-Roles
+    content: >
+      Registration runs in four sub-roles. Bus Crew greets hackers as they get
+      off shuttles and walks them to the registration tent. Queue Volunteers
+      organize the serpentine line and remind people to have their ID and
+      digital ticket ready. Hacker Registrars run the actual check-in at the
+      tables (this is where the laptop is required). Swag Grabbers fetch the
+      right t-shirt size and a swag bag once the Registrar tells them what to
+      get.
+    tags: [operations]
+
+  - title: Bus Crew Tasks
+    content: >
+      Bus Crew works outside in the bus drop-off zone. Help hackers off the
+      buses and direct them to the registration tent. Supervise the parking
+      area to make sure cars are not blocking the bus zone. You are the very
+      first impression hackers get of the event — be warm and welcoming.
+    tags: [operations]
+
+  - title: Queue Volunteer Tasks
+    content: >
+      Queue Volunteers manage the single serpentine line leading to the
+      registration tables. Stand at the front of the queue near the tables to
+      help feed people to open Registrars. Remind hackers in line to have their
+      photo ID and digital ticket ready so they do not slow things down when
+      they reach the front. Also supervise the middle and back of the queue to
+      catch any issues early.
+    tags: [operations]
+
+  - title: Hacker Registrar — Step by Step
+    content: >
+      For each hacker: scan their digital ticket's QR code into the email field
+      in Scanner Tool (or type their email if they do not have the ticket).
+      Check their photo ID against the name that pops up. Click Edit Badge ID,
+      scan the QR code on the physical badge with the scanner gun (it must be
+      a string of 4 words separated by hyphens — anything else is an error),
+      then click Confirm. Confirm the t-shirt size with the hacker and tell the
+      Swag Grabber what size to fetch.
+    tags: [procedure, critical]
+
+  - title: Verifying the Hacker Record
+    content: >
+      Before assigning a badge, verify the information that comes up matches
+      the photo ID. If the Badge ID field already shows a code (not "N/A"),
+      this hacker has already been registered — only assign a new badge if
+      they do not have their original. If you see an error during scanning, do
+      not improvise — get an organizer to help.
+    tags: [procedure, critical]
+
+  - title: Badge Colors and Roles
+    content: >
+      Badges come in different colors depending on the role (sponsor, visitor,
+      hacker, etc.). Before grabbing a badge, ask the attendee what role they
+      are — hacker, sponsor, workshop lead, mentor, or judge. Hackers go
+      through your line; for any other role, redirect them to the appropriate
+      queue rather than trying to register them yourself.
+    tags: [procedure, critical]
+
+  - title: Swag Grabber Tasks
+    content: >
+      Wait for the Hacker Registrar to call out the t-shirt size. Get that size
+      from the t-shirt pile and a swag bag from the swag pile, and hand them
+      to the Registrar (or the hacker) along with the badge. Keep the piles
+      organized — a chaotic swag area slows the whole queue down.
+    tags: [operations]
+
+  - title: After Check-In — What the Hacker Does
+    content: >
+      Once you have handed over the badge, t-shirt, and swag bag, point the
+      hacker to the stationery table where they can write their name and
+      pronouns on the badge. Do not skip this — the badge is incomplete
+      without it, and other volunteers (especially networking) rely on the
+      written name.
+    tags: [procedure]
+
+rules:
+  - You must bring a laptop — registration cannot be done from a phone.
+  - Always check photo ID against the name in Scanner Tool before assigning a badge.
+  - Never re-issue a badge to a hacker who already has one — flag your VL.
+  - Redirect non-hackers (sponsors, mentors, judges) to their appropriate queue.
+  - Badge codes must be 4 hyphen-separated words — anything else, get an organizer.
+
+glossary:
+  - term: Digital ticket
+    definition: The QR-coded confirmation a hacker receives by email after being accepted. Scan it into the email field in Scanner Tool.
+  - term: Badge ID
+    definition: The 4-word hyphen-separated code printed under each physical badge's QR code, used to associate that badge with the attendee in the system.
+  - term: N/A in Badge ID field
+    definition: The state you want to see when registering a hacker for the first time — it means no badge has been assigned to them yet.
+  - term: Serpentine queue
+    definition: A single back-and-forth line that funnels all hackers through a small footprint. Queue Volunteers help feed people from this line to open Registrar tables.
+  - term: Stationery table
+    definition: The table where newly-registered hackers fill in their name and pronouns on their badge.

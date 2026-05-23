@@ -1,0 +1,99 @@
+id: food
+name: Food Volunteer
+description: >
+  Food volunteers handle meal service for over 1000 hackers — scanning them in,
+  setting up and breaking down food stalls, keeping eating areas clean, and
+  managing dietary restrictions and allergy situations.
+icon: 🍴
+color: orange
+
+knowledge:
+  - title: Your Leads and Required Training
+    content: >
+      Your Volunteer Leads are Mona Afshar (647-479-3541) and Yashika Somani
+      (226-507-2657). Review the Food Training Slides before your shift. Food
+      shifts are physical and busy — hackers are hungry and there are a lot of
+      them, so being prepared makes the line move.
+    tags: [procedure]
+
+  - title: Core Responsibilities
+    content: >
+      Use the Scanner Tool to verify hackers before serving them; help set up
+      and take down food stalls before and after each meal; clean the eating
+      areas before meals (not just after); and help with active service to keep
+      hackers moving through the line.
+    tags: [operations]
+
+  - title: Scanning at Meals
+    content: >
+      Scan each hacker's badge before they take food. Food is configured for
+      multiple check-ins (unlike most events) but the rule is: serve them when
+      the first scan shows "Check-in success." If they come back and get the
+      blue "Already checked in" state, do NOT serve them seconds until an
+      organizer has explicitly enabled extra servings. After that enablement,
+      a successful re-scan shows "Check-in success again" and you may serve.
+    tags: [procedure, critical]
+
+  - title: Handling Food Allergies
+    content: >
+      If a hacker tells you they have a food allergy, ask for more details and
+      raise it with your VL. Common dietary needs (nuts, vegetarian, halal,
+      etc.) usually have separate lines, but more unusual allergies need to be
+      brought to the VL's attention so the team can handle it correctly.
+      Never guess about ingredients — get a VL.
+    tags: [safety, critical, escalation]
+
+  - title: Active Allergic Reaction with Epi-Pen
+    content: >
+      If a hacker is having an allergic reaction and needs to use their
+      epi-pen: only administer it if you are trained to do so. Otherwise let
+      them administer it themselves. In either case, escalate immediately —
+      call CRT (Campus Response Team) via your VL or an organizer, and wait
+      with the hacker until CRT arrives. Do not delay calling for help while
+      figuring out who is trained.
+    tags: [critical, safety, escalation]
+
+  - title: Seconds and Re-Service Policy
+    content: >
+      Hackers will ask for seconds. The default is no until your VL or an
+      organizer tells you re-service is enabled — usually after the first wave
+      has been served, when remaining quantities are clear. Once enabled, the
+      Scanner Tool will show "Check-in success again" on a re-scan, which is
+      your green light to serve. If you see "Already checked in" instead, the
+      enablement has not happened yet and you should not serve.
+    tags: [policy, procedure]
+
+  - title: Disrespectful Hackers
+    content: >
+      If hackers are disrespectful to you, other volunteers, or anyone else,
+      listen first to understand what is happening — sometimes there is a real
+      grievance underneath. If the behaviour continues or crosses a line, raise
+      it with your VL, who will escalate appropriately. You do not need to
+      tolerate abuse to do your job.
+    tags: [escalation, policy]
+
+  - title: Eating After Your Shift
+    content: >
+      Food is not guaranteed for volunteers on shift, but if there are leftovers
+      after a meal, volunteers on shift may eat the extras. After your shift,
+      you can eat leftovers if any remain — but plan ahead, since this is not
+      reliable. Bring food, or use the nearby university plaza on your breaks.
+      You may also take one snack from the volunteer HQ.
+    tags: [policy]
+
+rules:
+  - Scan every hacker before serving — no scan, no food.
+  - Never serve seconds until an organizer has explicitly enabled extra servings.
+  - Never administer an epi-pen unless you are trained — but always call CRT immediately.
+  - Always escalate allergy questions to your VL, never guess about ingredients.
+  - Listen first when hackers are upset, then escalate to your VL if behaviour continues.
+
+glossary:
+  - term: Epi-pen
+    definition: An emergency epinephrine auto-injector for severe allergic reactions. Only administer if trained; always call CRT.
+  - term: CRT
+    definition: Campus Response Team — campus first-aid responders, contacted via walkie-talkie or through an organizer.
+  - term: Check-in success again
+    definition: The green re-scan state in Scanner Tool indicating a valid second-or-later check-in for an event that allows multiple claims (food, once enabled by an organizer).
+  - term: Already checked in
+    definition: The blue Scanner Tool state indicating the attendee has already claimed this event. For food, this means do NOT serve them until extra servings are enabled.

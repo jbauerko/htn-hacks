@@ -1,0 +1,95 @@
+id: workshops
+name: Workshops Volunteer
+description: >
+  Workshops volunteers manage workshop logistics — checking hackers in, setting
+  up A/V and materials, greeting workshop hosts, and helping hosts manage their
+  time so each workshop runs to schedule.
+icon: 🔨
+color: cyan
+
+knowledge:
+  - title: Your Lead and Required Training
+    content: >
+      Your Volunteer Lead is Tanmay Shah (587-429-3734). Review the Workshops
+      Training before your shift for the complete role outline. Workshops have
+      fixed start times and external presenters, so being prepared and on time
+      matters more than in some other roles.
+    tags: [procedure]
+
+  - title: Checking Hackers In
+    content: >
+      Use the Scanner Tool to check each hacker in as they arrive at the
+      workshop room. Open the correct event in Scanner Tool, verify the event
+      name on screen, and scan badges as people arrive. Only hackers with valid
+      badges can attend — visitor badges in particular do not grant workshop
+      access.
+    tags: [procedure, critical]
+
+  - title: Checking In Volunteer Attendees
+    content: >
+      Volunteers are permitted to attend workshops, but only if they are on the
+      pre-approved volunteer attendee list. When a volunteer comes to check in,
+      cross-reference their name against the list before letting them in. If
+      they are not on the list, send them to your VL rather than letting them
+      attend.
+    tags: [procedure, policy]
+
+  - title: Setup Tasks
+    content: >
+      Before the workshop starts, help with set-up: A/V equipment (microphones,
+      projectors, speakers), cameras for recording, and any workshop-specific
+      materials. Arrive early enough that this is done before the host wants to
+      start. If something does not work, flag it immediately — do not wait
+      until the host needs it.
+    tags: [operations]
+
+  - title: Greeting and Supporting the Host
+    content: >
+      When the workshop host arrives, greet them warmly and make them feel
+      welcome. Confirm what they need (water, presenter remote, etc.). During
+      the workshop, help them manage their time — give them a clear signal
+      10 minutes before the end so they can wrap up rather than getting cut
+      off. The host's experience strongly affects whether they come back.
+    tags: [communication, operations]
+
+  - title: Too Many Hackers in the Room
+    content: >
+      If the room is over capacity (more hackers than seats or than the room
+      can safely hold), contact the workshops organizer Rebecca. Do not just
+      pack them in — fire-code and host-experience concerns mean rooms have
+      limits. Rebecca will decide how to handle overflow.
+    tags: [safety, escalation]
+
+  - title: Scanner Tool Failures During Check-in
+    content: >
+      If Scanner Tool stops working during check-in, first check whether
+      another volunteer in the room (not actively scanning) has a working
+      Scanner Tool you can use, or alert your VL to see if they have a working
+      one. If no working tool can be found, do a manual headcount of hackers
+      in the room so the team has at least a number. Do not block hackers from
+      entering just because the tool is down.
+    tags: [procedure]
+
+  - title: Disruptive Hackers During a Workshop
+    content: >
+      If a hacker is being disrespectful or disruptive during the workshop, ask
+      them to stop. If you feel comfortable, take them aside and ask what is
+      going on — sometimes there is a real reason. If they continue or you do
+      not feel safe doing that one-on-one conversation, escalate to your VL or
+      an organizer. The host should not have to manage this.
+    tags: [escalation, policy]
+
+rules:
+  - Scan every hacker via Scanner Tool — visitor badges do not grant workshop access.
+  - Cross-reference volunteer attendees against the pre-approved list before letting them in.
+  - Always give the workshop host a 10-minute warning before the scheduled end time.
+  - For overflow rooms, contact workshops organizer Rebecca — do not just pack people in.
+  - Never confront a disruptive hacker alone if you feel unsafe — escalate.
+
+glossary:
+  - term: Workshop host
+    definition: The external (or internal) presenter running the workshop. Your job is to support them, not run their content.
+  - term: Rebecca
+    definition: The workshops organizer — contact her for over-capacity rooms or major workshop-logistics escalations.
+  - term: Pre-approved volunteer attendee list
+    definition: A list maintained by the workshops team of volunteers permitted to attend specific workshops. Volunteers must be on this list to attend.

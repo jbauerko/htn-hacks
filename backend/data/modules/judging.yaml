@@ -1,0 +1,93 @@
+id: judging
+name: Judging Volunteer
+description: >
+  Judging volunteers usher hacker teams between waiting rooms and assigned judging
+  rooms, keep the rotation moving on time, and make sure presenting teams are not
+  distracted by the team waiting outside.
+icon: 🎖️
+color: teal
+
+knowledge:
+  - title: Your Lead and Required Training
+    content: >
+      Your Volunteer Lead is Carolyn Zhang (613-879-5188). Review the Judging
+      Volunteer Training Slides before your shift. Judging is choreographed —
+      teams have to arrive in the right place at the right time, or the whole
+      schedule slips.
+    tags: [procedure]
+
+  - title: Setup Before Judging Starts
+    content: >
+      An organizer in your assigned waiting room will assign you a specific
+      judging room — you escort teams to that room and nowhere else. Know which
+      room is yours before judging starts and confirm the route. If you do not
+      know where your judging room is, ask the organizer in the waiting room
+      now, not when a team is already waiting on you.
+    tags: [procedure]
+
+  - title: The Rotation During Judging
+    content: >
+      Every five minutes or so, check with the organizer in the waiting room
+      to find out which team is up next. Call that team's name from the
+      waiting room and walk them to the judging room. At the room, ask them
+      to stay quiet and wait outside until an organizer inside calls them in.
+      Do not let them barge in on the team currently presenting.
+    tags: [procedure, critical]
+
+  - title: Always Have a Team Waiting Outside the Judging Room
+    content: >
+      There should always be a team waiting outside the judging room while
+      another team is presenting — that is what keeps the rotation moving.
+      If you have just delivered a team, head back to the waiting room and
+      get the next one ready so they can be at the door before the current
+      team finishes.
+    tags: [operations, critical]
+
+  - title: Keep the Waiting Team Quiet
+    content: >
+      The team waiting outside the room must be quiet — the team presenting
+      can hear them and gets distracted. Tell waiting teams clearly before
+      they get to the door that they need to keep their voices down. If they
+      do not, remind them.
+    tags: [policy]
+
+  - title: Coming Back From a Break
+    content: >
+      When judging resumes after a break, there should be a team waiting
+      outside the door BEFORE the break officially ends. For example, if the
+      break ends at 11:15 AM, the next team should be at the door by 11:10 AM.
+      Plan your timing accordingly and pull the team out of the waiting room
+      early.
+    tags: [operations]
+
+  - title: Handling Hacker Questions
+    content: >
+      If hackers ask about judging logistics, policies, or what to do, direct
+      them to the Judging FAQ or to the organizer inside the judging room.
+      Do not improvise answers to policy questions — judging rules affect
+      who wins prizes, and a wrong answer creates real disputes.
+    tags: [escalation, communication]
+
+  - title: Policy Questions
+    content: >
+      For any question about judging policy (eligibility, rules, prize
+      categories, scoring), escalate to the organizer in the waiting room or
+      point the hacker to the judging instructions and FAQ. You do not need
+      to know the answers yourself — knowing where to send the question is
+      the skill.
+    tags: [escalation]
+
+rules:
+  - Always have a team waiting outside the judging room before the current team finishes.
+  - Never improvise answers to judging policy questions — escalate to an organizer.
+  - The waiting team must stay quiet outside the judging room — remind them.
+  - After a break, get the next team to the door before the break officially ends.
+  - Only escort teams to the specific judging room you were assigned.
+
+glossary:
+  - term: Waiting room
+    definition: The room where hacker teams wait their turn to be called for judging. Each waiting room has at least one organizer to coordinate with.
+  - term: Judging room
+    definition: The room where hackers present their projects to judges. You are assigned to one specific room and escort teams to it.
+  - term: Judging FAQ
+    definition: The reference document of judging policies and rules — your fallback answer for hacker policy questions, alongside the organizer in the room.

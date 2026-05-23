@@ -1,0 +1,60 @@
+id: setup-and-cleanup
+name: Setup and Cleanup Volunteer
+description: >
+  Setup and Cleanup volunteers arrive before or after the main event to help
+  organizers set things up or pack things down — taking down tables, banners,
+  and signage, and gathering lost items and litter.
+icon: 🧹
+color: emerald
+
+knowledge:
+  - title: Your Leads
+    content: >
+      Your Volunteer Leads are Alex Wang (437-766-9166) and Adam Selim, the
+      Volunteer Organizer (adam@hackthenorth.com, 289-938-9545). Most of the
+      coordination during a cleanup shift comes directly from organizers and
+      VLs on site, so listen carefully when they assign tasks.
+    tags: [procedure]
+
+  - title: What the Shift Looks Like
+    content: >
+      Setup and Cleanup is described as a chill role — there are no hackers to
+      manage and the work is physical but straightforward. Common tasks
+      include taking down tables, removing banners and signage, collecting
+      lost items, and tidying any remaining litter from the building. Work
+      alongside organizers and VLs who will direct what gets done next.
+    tags: [operations]
+
+  - title: How Issues Get Handled
+    content: >
+      All contingencies during a cleanup session are handled by organizers
+      directly — your job is the physical work, not problem-solving for
+      situations outside that. If something unexpected comes up (lost item
+      that looks valuable, damage to the venue, anyone questioning what
+      you are doing), bring it to the nearest organizer or VL.
+    tags: [escalation]
+
+  - title: Handling Lost and Found Items
+    content: >
+      You will probably find personal items left behind by hackers. Do not
+      keep anything — bring lost items to the organizer or VL designated for
+      lost and found. Phones, laptops, and bags especially should be handed
+      over fast so owners can claim them before leaving the area.
+    tags: [policy]
+
+  - title: Be Careful With What You Throw Out
+    content: >
+      Banners, signage, and decorations may be reusable for future events.
+      Check with an organizer or VL before throwing anything that looks
+      reusable into the trash. The default assumption should be "keep" unless
+      a VL has confirmed otherwise.
+    tags: [procedure]
+
+rules:
+  - Hand lost items to a designated organizer or VL — never keep anything found.
+  - Confirm with a VL before throwing out signage, banners, or anything that looks reusable.
+  - Bring any unexpected situation to the nearest organizer rather than handling it alone.
+
+glossary:
+  - term: Lost and Found
+    definition: The designated organizer or VL collecting items left behind by hackers — hand things over here rather than keeping or discarding them.

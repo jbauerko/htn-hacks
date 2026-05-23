@@ -1,0 +1,126 @@
+id: floor-patrol
+name: Floor Patrol Volunteer
+description: >
+  Floor Patrol volunteers roam the hacking floors talking to hackers, answering
+  questions, cleaning up after meals, refilling snacks, and reporting issues —
+  the general-purpose floor presence that keeps the event running smoothly.
+icon: 🔦
+color: emerald
+
+knowledge:
+  - title: Your Leads and Required Training
+    content: >
+      Your Volunteer Leads are Evelina Zheng (647-881-3162) and Nadeen Findakly
+      (416-227-1340). Review the Floor Patrol and Security General Training Slides
+      before your shift — Floor Patrol shares its training with Security and you
+      should know both roles' content. You may be temporarily reassigned to
+      another role during a shift if a section needs extra help.
+    tags: [procedure]
+
+  - title: General Responsibilities on the Floor
+    content: >
+      Speak with hackers, answer questions, and give directions when asked. Monitor
+      the floor for any incident or issue (spills, injuries, suspicious behaviour)
+      and report it appropriately. Help with general venue upkeep — keeping the
+      building clean is part of the job, not someone else's. You are the
+      first-response presence on the floor.
+    tags: [operations]
+
+  - title: Security as Part of Floor Patrol
+    content: >
+      Floor Patrol has a security component. Make sure non-participants do not
+      enter the event space. Anyone seen without a Hack the North badge should
+      be directed to the exits politely. If someone refuses to leave, escalate
+      to a VL or organizer rather than confronting them yourself.
+    tags: [safety, critical]
+
+  - title: Meal Cleanup
+    content: >
+      Thirty minutes after each meal ends, walk through the hacking spaces to
+      collect garbage and clean up litter. Plastic gloves and garbage bags are
+      provided. Sort waste correctly: cans and paper are recyclable; food and
+      meal containers, utensils, and napkins are compostable; plastic snack
+      wrappers go in regular garbage. Report any spills to your VL — do not
+      try to clean a large spill yourself.
+    tags: [operations, procedure]
+
+  - title: Snack Cart Duty
+    content: >
+      One snack cart circulates on each of floors 3, 4, 5, and 6, staffed by two
+      people per cart. Walk around rooms finding hackers, chat with them, and
+      offer snacks. This is a deliberately friendly role — the snack cart is
+      partly about morale, not just food delivery.
+    tags: [operations]
+
+  - title: Maintaining Stationary Activities (E7 Floor 1 Only)
+    content: >
+      This task applies only if you are on E7 floor 1. The stationary activities
+      table is in front of the Robolab. Every 30 minutes, walk past, check the
+      area is neat, and confirm nothing is missing. If materials are running low
+      or have disappeared, restock or report it.
+    tags: [operations]
+
+  - title: Reporting Spills and Messes
+    content: >
+      For large spills or messes in hallways, do not try to handle it alone.
+      Inform a VL or organizer who will dispatch the right response. Your job
+      is to report and, if needed, stand near the spill to warn passers-by until
+      help arrives.
+    tags: [safety, escalation]
+
+  - title: Responding to an Injured Hacker
+    content: >
+      If you find an injured hacker, the order is: tell Adam via Slack or your
+      shift lead, call Campus Response Team (CRT) on a walkie-talkie if one is
+      available or have an organizer contact CRT if not, locate any nearby
+      volunteer with first-aid training (identified by a red sticker on their
+      badge) and ask them to assess if no trained person is already there, and
+      stay with the injured person until CRT arrives. Do not move an injured
+      person unless they are in immediate further danger.
+    tags: [critical, safety, escalation]
+
+  - title: People in the Venue Without a Badge
+    content: >
+      If you spot someone in the venue without a badge, inform them politely
+      that they should not be on the premises and direct them to the exits. If
+      they refuse to leave, escalate immediately to a VL or organizer — do not
+      try to physically remove anyone. Aggression is a clear escalation
+      trigger.
+    tags: [safety, critical, escalation]
+
+  - title: Refilling Snacks and Toiletries
+    content: >
+      When a snack table or toiletries supply runs out, go to the Organizer Help
+      Desk and ask to be escorted to the storage containers. You cannot grab
+      supplies on your own. Grab the refill box, bring it back to the location,
+      and refill. Do not move storage materials without an escort.
+    tags: [procedure]
+
+  - title: Being Reassigned Mid-Shift
+    content: >
+      Floor Patrol is the flex section, which means you may be pulled to help
+      another team (most often food). Your shift lead collects the volunteers
+      needed and walks them to Volunteer HQ, where you are handed off to the
+      VL who needs help. Take instructions from the new VL until they dismiss
+      you, then return to your original floor patrol position.
+    tags: [operations]
+
+rules:
+  - Direct anyone without a HTN badge to the exits, and escalate if they refuse.
+  - Never attempt to clean a large spill alone — report it to your VL.
+  - Always stay with an injured person until CRT arrives.
+  - Get an organizer escort before taking anything from the storage containers.
+  - Report incidents to a VL or Adam — never handle escalations alone.
+  - Red sticker on a badge means first-aid trained — find them fast in emergencies.
+
+glossary:
+  - term: CRT
+    definition: Campus Response Team — the campus first-aid and emergency response service. Reached via walkie-talkie or through an organizer.
+  - term: Snack cart
+    definition: A roving snack distribution cart, two volunteers per cart, one cart on each of floors 3, 4, 5, and 6.
+  - term: Stationary activities table
+    definition: The self-serve activity area in front of the Robolab on E7 floor 1, monitored by floor 1 patrol volunteers every 30 minutes.
+  - term: Red sticker on badge
+    definition: Indicates a volunteer with first-aid training — find them quickly when a medical situation arises.
+  - term: Organizer Help Desk
+    definition: Where you go to be escorted to storage containers for snack and toiletry refills, distinct from the volunteer Help Desk.

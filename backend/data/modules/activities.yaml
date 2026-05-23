@@ -1,0 +1,78 @@
+id: activities
+name: Activities Volunteer
+description: >
+  Activities volunteers run and support the side-activities that hackers enjoy
+  between coding sessions — setup, scanning attendees in, monitoring the activity,
+  and helping the activity lead and vendors keep things moving.
+icon: 🎠
+color: amber
+
+knowledge:
+  - title: Your Lead and Required Training
+    content: >
+      Your Volunteer Lead is Pahul Kaur (647-860-8575). You must review the
+      Activities Volunteer Training Slides before arriving for your shift — they
+      contain the complete role outline. Showing up without having read them puts
+      you behind your shift partners and the activity leads.
+    tags: [procedure]
+
+  - title: Core Responsibilities
+    content: >
+      Your job covers four things across the shift: monitor the activity and help
+      out when needed; assist the activity leads, your VL, and any external
+      vendors; set up before the activity starts and take it down when it ends;
+      and provide extra hands for any issue that comes up. You are the floor
+      presence that makes the activity actually run.
+    tags: [operations]
+
+  - title: Checking Hackers Into Activities
+    content: >
+      For every activity except stationary activities, use the Scanner Tool to
+      check hackers in. Open the Scanner Tool on your phone, tap the correct
+      event from the upcoming events list, verify the event name on screen,
+      then scan the badge QR code. Stationary activities (the ongoing self-serve
+      table by the Robolab on E7 floor 1) do not require scanning — hackers come
+      and go freely there.
+    tags: [procedure, critical]
+
+  - title: Handling Arguments Between Hackers
+    content: >
+      If hackers start arguing during an activity, try to help resolve it first —
+      a calm volunteer presence often defuses things. If the conflict continues
+      or escalates, inform your Volunteer Lead rather than trying to manage it
+      alone. Do not take sides; your role is to keep the activity safe and
+      welcoming for everyone present.
+    tags: [escalation]
+
+  - title: Damaged Equipment
+    content: >
+      If equipment is damaged during an activity, inform your VL immediately.
+      Equipment borrowed from an external vendor must be escalated by the VL to
+      an organizer. If the damaged equipment is now a safety hazard, set it
+      aside in a place hackers cannot reach so no one uses it before it is
+      removed or repaired.
+    tags: [safety, escalation]
+
+  - title: Scanner Tool Broken at an Activity
+    content: >
+      If Scanner Tool stops working, do not just send hackers away. Keep a rough
+      count of how many hackers go into the activity so the team has a number
+      after the fact — exact accuracy is not required, but a ballpark is much
+      better than nothing. Tell your VL the tool is down so it can be fixed for
+      the next shift.
+    tags: [procedure]
+
+rules:
+  - Always scan hackers in via Scanner Tool for every activity except stationary activities.
+  - Never let hackers continue using equipment that has become a safety hazard.
+  - Escalate damaged vendor equipment to your VL — do not contact the vendor yourself.
+  - Try to resolve hacker conflicts first, but escalate to the VL if they continue.
+  - Keep a manual count if Scanner Tool fails; do not block hackers from entering.
+
+glossary:
+  - term: Stationary activities
+    definition: The always-available self-serve activity table located in front of the Robolab on E7 floor 1 — does not require check-in via Scanner Tool.
+  - term: Activity lead
+    definition: The organizer running a specific activity. Your job is to assist them, not run the activity yourself unless asked.
+  - term: Vendor
+    definition: An external company or person providing an activity or equipment. Treat their equipment with extra care and route any damage through your VL.

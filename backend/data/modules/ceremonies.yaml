@@ -1,0 +1,96 @@
+id: ceremonies
+name: Ceremonies Volunteer
+description: >
+  Ceremonies volunteers move hackers from E7 to Lazaridis Hall for opening and
+  closing ceremonies, scan them in at the entrance, and usher them into seats so
+  the ceremony starts on time.
+icon: 🎭
+color: violet
+
+knowledge:
+  - title: Your Lead and Required Training
+    content: >
+      Your Volunteer Lead is Nicole Cui (437-218-6113). Review the Ceremonies
+      Volunteer Training Slides before your shift for the complete role outline.
+      Ceremonies has tight timing — both ceremonies start at fixed times and you
+      need to know the route and your assigned station before you arrive.
+    tags: [procedure]
+
+  - title: Where and When the Ceremonies Happen
+    content: >
+      Both ceremonies are at Lazaridis Hall, reached on foot from E7. Opening
+      Ceremonies starts at 8:00pm. Closing Ceremonies starts at 2:30pm. You need
+      to have hackers in seats before the start time, which means moving them
+      from E7 well in advance. Know your station on the route map before you go
+      on shift.
+    tags: [critical, operations]
+
+  - title: Your Three Possible Stations
+    content: >
+      Ceremonies volunteers work in one of three zones. Along the path between
+      E7 and Lazaridis Hall, you stand in pairs at marked points and direct
+      hackers towards the ceremonies building (and back afterwards). In the
+      building, you scan hackers at the entrance to the hall using the two main
+      doors (not the two side doors). In the hall, you usher hackers to sit
+      down as quickly as possible, near the front if there is space, and ask
+      them to quiet down when needed.
+    tags: [operations, critical]
+
+  - title: Answering Hacker Questions
+    content: >
+      During the move, hackers will ask about timing, location, what to expect,
+      and what to do afterwards. Know the start times (8:00pm opening, 2:30pm
+      closing), the location (Lazaridis Hall), and the return path so you can
+      answer confidently. If you do not know an answer, say so and check with
+      your VL on Slack rather than guessing.
+    tags: [communication]
+
+  - title: Scanning at the Hall Entrance
+    content: >
+      Only scan at the two main doors of Lazaridis Hall — the side doors are
+      not staffed and should not be used for entry. Be strict about valid
+      badges: only let hackers with proper badges in. Visitor badges do not
+      grant ceremony access.
+    tags: [procedure, critical]
+
+  - title: Scan Errors at the Entrance
+    content: >
+      If a scan fails (red error state), be strict — try the scan again, or
+      switch to a different scanner, but turn away anyone whose badge will
+      not validate. A failed scan is not an exception to make on the spot; a
+      missing or invalid badge means no entry. Direct them to the Help Desk
+      after the ceremony entry rush.
+    tags: [policy, critical]
+
+  - title: Rowdy Hackers in the Hall
+    content: >
+      If a hacker is being loud or disruptive inside Lazaridis Hall, ask them
+      to quiet down. If they continue or things escalate, contact a VL or
+      organizer. If anything becomes violent, contact police — do not try to
+      restrain anyone yourself.
+    tags: [safety, escalation]
+
+  - title: Hackers Who Stray From the Path
+    content: >
+      Some hackers will decide not to attend ceremonies and may try to leave
+      the group. Encourage them to come along — they will get more out of the
+      event by attending — but do not force them. The path is a suggestion,
+      not a requirement, and forcing attendance is not your job.
+    tags: [policy]
+
+rules:
+  - Scan only at Lazaridis Hall's two main doors — never the side doors.
+  - Turn away hackers whose badge will not scan validly — no exceptions at the door.
+  - Call police only if a situation turns violent; otherwise escalate to your VL.
+  - Never force a hacker to attend ceremonies — encourage but accept their choice.
+  - Always walk the path in pairs when assigned to a route station.
+
+glossary:
+  - term: Lazaridis Hall
+    definition: The ceremony venue, reached on foot from E7 via the marked route. Has two main doors (use for entry) and two side doors (do not use for entry).
+  - term: Easel
+    definition: A marked station along the path between E7 and Lazaridis Hall — these are the points where volunteer pairs are stationed during the move.
+  - term: Opening Ceremonies
+    definition: The kickoff event, starts at 8:00pm at Lazaridis Hall.
+  - term: Closing Ceremonies
+    definition: The wrap-up event, starts at 2:30pm at Lazaridis Hall.

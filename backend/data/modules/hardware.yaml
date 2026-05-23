@@ -1,0 +1,100 @@
+id: hardware
+name: Hardware Volunteer
+description: >
+  Hardware volunteers staff the Cohere Hardware Hub and 3D printing center —
+  checking equipment in and out, supervising the drone room and hand-tool area,
+  and helping hackers use the 3D printers.
+icon: ⚡
+color: pink
+
+knowledge:
+  - title: Your Lead, Organizer, and Required Training
+    content: >
+      Your Volunteer Lead is Rohan Tuli (365-778-0651). The Hardware Organizer
+      is Jeremy Su, who you escalate hardware-specific issues to. Review the
+      Hardware Training 2025 slides before your shift. Hardware shifts come in
+      two flavours, and you will be assigned to one for your shift — know which
+      one before you arrive.
+    tags: [procedure]
+
+  - title: The Two Hardware Shift Types
+    content: >
+      Hardware Checkout shifts cover the main equipment loan desk plus
+      supervision of the Cohere Hardware Hacking Corner and the drone room.
+      3D Printing shifts cover the 3D printing center — check-ins, sign-outs,
+      assisting hackers, and weighing finished prints. Tasks do not overlap;
+      you focus on whichever you have been assigned.
+    tags: [operations]
+
+  - title: Hardware Checkout Duties
+    content: >
+      Check hardware out to hackers and check returned items back in. Watch
+      the Cohere Hardware Hacking Corner to make sure hand tools (glue guns,
+      heat guns, wire strippers, wire cutters, soldering irons) do NOT leave
+      that corner — they are dangerous and must be used in the supervised
+      area. Oversee the drone room, where only one team is allowed in at a
+      time.
+    tags: [safety, critical, operations]
+
+  - title: 3D Printing Duties
+    content: >
+      Oversee the 3D printing center: check hackers in and sign them out for
+      printer use, assist them with operating the printers, and weigh prints
+      after they finish (the team tracks usage by weight). Be patient — many
+      hackers will not have used a 3D printer before and may need walking
+      through the basics.
+    tags: [operations]
+
+  - title: A Hardware Tool is Not Working
+    content: >
+      If a hardware tool stops working, first check whether it is just one
+      volunteer's tool or the system in general. If it is more than one,
+      alert Rohan. There is a Google Sheet for tracking broken hardware —
+      log the failure there so the team has a record.
+    tags: [procedure, escalation]
+
+  - title: Hardware is Damaged or Defective
+    content: >
+      If a hacker returns hardware that is defective, confirm they were the
+      one who checked it out, then give them a replacement from the spare
+      stock kept on the side. If hardware comes back damaged (broken from
+      use), contact Olivia Wang, who is the relevant Hardware Organizer for
+      damaged items — do not just put damaged items back into circulation.
+    tags: [procedure, escalation]
+
+  - title: Possible Hardware Theft
+    content: >
+      If you see someone trying to take hardware without checking it out, or
+      hardware that should be present has gone missing, escalate immediately
+      to Jeremy Su (Hardware Organizer) or the Logistics Leads. Do not try
+      to confront a suspected thief alone — your job is to report, not
+      enforce.
+    tags: [safety, escalation, critical]
+
+  - title: Overcrowding in the Hacking Corner
+    content: >
+      If there are too many people in the Cohere Hardware Hacking Corner,
+      ask hackers who are NOT actively doing hardware hacks to leave first.
+      If it is still too crowded, ask hackers who are not using the hand
+      tools or drone room to leave. Hand-tool and drone-room users have
+      priority because the space exists for them specifically.
+    tags: [policy, safety]
+
+rules:
+  - Hand tools (glue guns, heat guns, soldering irons, wire tools) never leave the Hardware Corner.
+  - Only one team is allowed in the drone room at a time.
+  - Confirm that a hacker checked out a piece of hardware before issuing a defective replacement.
+  - Escalate suspected hardware theft to Jeremy Su or Logistics Leads — do not confront alone.
+  - In overcrowding, prioritize hand-tool and drone-room users; ask others to leave first.
+
+glossary:
+  - term: Cohere Hardware Hacking Corner
+    definition: The supervised area for hands-on hardware work — soldering, gluing, wire work. Hand tools never leave this corner.
+  - term: Drone room
+    definition: A dedicated room for drone testing, used by only one team at a time and supervised by Hardware Checkout volunteers.
+  - term: Jeremy Su
+    definition: The Hardware Organizer — escalation point for theft, major hardware issues, and policy questions.
+  - term: Olivia Wang
+    definition: Hardware Organizer responsible for damaged hardware — route physically broken items to her.
+  - term: Rohan Tuli
+    definition: The Hardware Volunteer Lead (365-778-0651) — your first contact for shift-level issues and broken tools.
