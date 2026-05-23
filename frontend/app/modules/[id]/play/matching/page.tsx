@@ -134,10 +134,10 @@ function Play({
       (card.side === "term" && wrong.term === card.pairId) ||
       (card.side === "definition" && wrong.def === card.pairId)
     );
-    if (isSolved) return `border-emerald-300 bg-emerald-50 text-emerald-700 opacity-60 cursor-default`;
-    if (isWrong) return `border-rose-400 bg-rose-50 text-rose-800 anim-shake`;
+    if (isSolved) return `border-[#A8F0A4] bg-[#E8FFE7] text-[#246B22] opacity-60 cursor-default`;
+    if (isWrong) return `border-[#F43F5E] bg-[#FFE4E6] text-[#7A1622] anim-shake`;
     if (selected) return `${t.borderStrong} ${t.bgSoft} ${t.textStrong} scale-[1.02]`;
-    return `border-zinc-200 bg-white hover:border-zinc-400 hover:scale-[1.02] dark:bg-zinc-900 dark:border-zinc-700`;
+    return `border-slate-200 bg-white text-slate-800 hover:border-slate-400 hover:scale-[1.02]`;
   }
 
   return (
@@ -153,7 +153,7 @@ function Play({
           <div className={`inline-block rounded-full px-3 py-1 text-xs font-bold ${t.bgChip} ${t.textStrong}`}>
             +25 per match · −5 per miss
           </div>
-          <h2 className="mt-2 text-lg font-bold">
+          <h2 className="mt-2 text-lg font-bold text-slate-900">
             Tap a term, then tap its matching definition.
           </h2>
         </div>
@@ -161,7 +161,7 @@ function Play({
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           {/* TERMS column */}
           <div>
-            <div className="mb-2 text-xs font-bold uppercase tracking-wider text-zinc-500">Terms</div>
+            <div className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-500">Terms</div>
             <ul className="grid grid-cols-2 gap-2">
               {terms.map((card) => {
                 const selected = selectedTerm === card.pairId && !solved[card.pairId];
@@ -182,7 +182,7 @@ function Play({
 
           {/* DEFINITIONS column */}
           <div>
-            <div className="mb-2 text-xs font-bold uppercase tracking-wider text-zinc-500">Definitions</div>
+            <div className="mb-2 text-xs font-bold uppercase tracking-wider text-slate-500">Definitions</div>
             <ul className="space-y-2">
               {defs.map((card) => {
                 const selected = selectedDef === card.pairId && !solved[card.pairId];

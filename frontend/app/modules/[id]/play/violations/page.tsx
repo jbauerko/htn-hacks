@@ -122,20 +122,20 @@ function Play({
           Story {storyIdx + 1} / {stories.length} · tap every rule slip
         </div>
 
-        <article key={story.id} className="mt-3 anim-pop rounded-3xl border-2 border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-          <h2 className="text-xl font-extrabold">{story.title}</h2>
-          <p className="mt-2 text-sm italic text-zinc-500">{story.intro}</p>
+        <article key={story.id} className="mt-3 anim-pop rounded-3xl border-2 border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-extrabold text-slate-900">{story.title}</h2>
+          <p className="mt-2 text-sm italic text-slate-500">{story.intro}</p>
 
           <div className="mt-4 space-y-2">
             {story.spans.map((span) => {
               const isTapped = !!tapped[span.id];
-              let cls = "border-zinc-200 bg-white hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900";
+              let cls = "border-slate-200 bg-white text-slate-800 hover:bg-slate-50";
               if (!revealed && isTapped) cls = `${t.borderStrong} ${t.bgSoft} ${t.textStrong}`;
               if (revealed) {
-                if (span.is_violation && isTapped) cls = "border-emerald-400 bg-emerald-50 text-emerald-900";
-                else if (span.is_violation && !isTapped) cls = "border-rose-400 bg-rose-50 text-rose-900";
-                else if (!span.is_violation && isTapped) cls = "border-amber-400 bg-amber-50 text-amber-900";
-                else cls = "border-zinc-200 bg-zinc-50 text-zinc-500 dark:bg-zinc-900";
+                if (span.is_violation && isTapped) cls = "border-[#54C152] bg-[#D2FFD1] text-[#246B22]";
+                else if (span.is_violation && !isTapped) cls = "border-[#F43F5E] bg-[#FFE4E6] text-[#7A1622]";
+                else if (!span.is_violation && isTapped) cls = "border-[#F59E0B] bg-[#FEF3C7] text-[#7C4E04]";
+                else cls = "border-slate-200 bg-slate-50 text-slate-500";
               }
               return (
                 <div key={span.id}>
@@ -158,8 +158,8 @@ function Play({
 
           {!revealed ? (
             <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
-              <div className="text-xs text-zinc-500">
-                Tapped <span className="font-bold tabular-nums">{tappedCount}</span> / {story.spans.length}
+              <div className="text-xs text-slate-600">
+                Tapped <span className="font-bold tabular-nums text-slate-900">{tappedCount}</span> / {story.spans.length}
               </div>
               <button
                 onClick={reveal}
@@ -181,7 +181,7 @@ function Play({
           )}
         </article>
 
-        <div className="mt-3 text-center text-xs text-zinc-400">
+        <div className="mt-3 text-center text-xs text-slate-500">
           +15 per slip you catch · −8 per slip you miss · −6 false alarm · +10 perfect story
         </div>
       </div>
@@ -191,7 +191,7 @@ function Play({
 
 function Legend() {
   return (
-    <ul className="flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-zinc-500">
+    <ul className="flex flex-wrap gap-x-3 gap-y-1 text-[11px] text-slate-600">
       <li>🟢 caught</li>
       <li>🔴 missed</li>
       <li>🟡 false alarm</li>

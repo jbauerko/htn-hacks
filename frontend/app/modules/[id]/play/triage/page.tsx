@@ -124,7 +124,7 @@ function Play({
   }
 
   const timeFrac = secondsLeft / TIME_PER_TICKET;
-  const timeColor = secondsLeft < 3 ? "bg-rose-500" : secondsLeft < 6 ? "bg-amber-500" : "bg-emerald-500";
+  const timeColor = secondsLeft < 3 ? "bg-[#F43F5E]" : secondsLeft < 6 ? "bg-[#F59E0B]" : "bg-[#54C152]";
 
   return (
     <>
@@ -137,10 +137,10 @@ function Play({
           <span className={`rounded-full px-2 py-0.5 font-bold ${t.bgChip} ${t.textStrong}`}>
             Ticket {idx + 1} / {tickets.length}
           </span>
-          <span className="font-bold text-zinc-500 tabular-nums">⏱ {secondsLeft.toFixed(1)}s</span>
+          <span className="font-bold text-slate-600 tabular-nums">⏱ {secondsLeft.toFixed(1)}s</span>
         </div>
 
-        <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-zinc-200 dark:bg-zinc-800">
+        <div className="mb-4 h-2 w-full overflow-hidden rounded-full bg-slate-200">
           <div
             className={`h-full ${timeColor} transition-[width] duration-100`}
             style={{ width: `${timeFrac * 100}%` }}
@@ -150,20 +150,20 @@ function Play({
         {/* Ticket card */}
         <div
           key={current.id}
-          className="anim-pop relative rounded-3xl border-2 border-zinc-200 bg-white p-6 shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+          className="anim-pop relative rounded-3xl border-2 border-slate-200 bg-white p-6 shadow-md"
         >
-          <div className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+          <div className="text-xs font-bold uppercase tracking-wider text-slate-500">
             Incoming
           </div>
-          <div className="mt-2 text-lg leading-snug text-zinc-800 dark:text-zinc-100">
+          <div className="mt-2 text-lg leading-snug text-slate-900">
             {current.text}
           </div>
 
           {feedback && (
             <div
               className={`mt-4 rounded-2xl border-2 p-3 anim-pop ${feedback.correct
-                ? "border-emerald-300 bg-emerald-50 text-emerald-900"
-                : "border-rose-300 bg-rose-50 text-rose-900"}`}
+                ? "border-[#54C152] bg-[#D2FFD1] text-[#246B22]"
+                : "border-[#F43F5E] bg-[#FFE4E6] text-[#7A1622]"}`}
             >
               <div className="text-xs font-bold uppercase tracking-wider">
                 {feedback.correct ? "Nice triage" : "Not quite"}
@@ -181,9 +181,9 @@ function Play({
             const isPicked = feedback && b.id === feedback.pickedId;
             let cls = `${bt.bgChip} ${bt.textStrong} hover:scale-[1.04] active:scale-95`;
             if (feedback) {
-              if (isCorrect) cls = "bg-emerald-500 text-white";
-              else if (isPicked) cls = "bg-rose-500 text-white anim-shake";
-              else cls = "bg-zinc-100 text-zinc-400 dark:bg-zinc-800";
+              if (isCorrect) cls = "bg-[#54C152] text-white";
+              else if (isPicked) cls = "bg-[#F43F5E] text-white anim-shake";
+              else cls = "bg-slate-100 text-slate-400";
             }
             return (
               <button
@@ -199,7 +199,7 @@ function Play({
           })}
         </div>
 
-        <div className="mt-3 text-center text-xs text-zinc-400">
+        <div className="mt-3 text-center text-xs text-slate-500">
           +15 base · +1 per second remaining · −8 wrong · −5 timeout
         </div>
       </div>

@@ -26,7 +26,7 @@ export function Loader({
       <div>
         <div className={`${t.textStrong} text-xl font-bold`}>{label}</div>
         {hint ? (
-          <div className="mt-2 text-sm text-zinc-500 dark:text-zinc-400">{hint}</div>
+          <div className="mt-2 text-sm text-slate-600">{hint}</div>
         ) : null}
       </div>
     </div>

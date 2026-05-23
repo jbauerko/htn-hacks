@@ -128,15 +128,15 @@ function Play({
             Scenario {idx + 1} / {scenarios.length}
           </span>
           {streak >= 2 && (
-            <span className="rounded-full bg-amber-100 px-2 py-0.5 font-bold text-amber-700 anim-pop">
+            <span className="rounded-full bg-[#FEF3C7] px-2 py-0.5 font-bold text-[#7C4E04] anim-pop">
               🔥 {streak} streak
             </span>
           )}
         </div>
 
-        <div key={current.id} className="anim-pop rounded-3xl border-2 border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-          <h2 className="text-xl font-extrabold">{current.title}</h2>
-          <p className="mt-3 text-base leading-relaxed text-zinc-700 dark:text-zinc-200">
+        <div key={current.id} className="anim-pop rounded-3xl border-2 border-slate-200 bg-white p-6 shadow-sm">
+          <h2 className="text-xl font-extrabold text-slate-900">{current.title}</h2>
+          <p className="mt-3 text-base leading-relaxed text-slate-700">
             {current.situation}
           </p>
 
@@ -149,7 +149,7 @@ function Play({
               ) : (
                 <button
                   onClick={() => setShowHint(true)}
-                  className="text-sm font-medium text-zinc-500 underline hover:text-zinc-800"
+                  className="text-sm font-medium text-slate-500 underline hover:text-slate-800"
                 >
                   Show hint (worth a tiny score hit if you're stuck)
                 </button>
@@ -161,23 +161,23 @@ function Play({
             {current.choices.map((c) => {
               const isPicked = picked === c.id;
               const showState = !!picked;
-              let cls = "border-zinc-200 bg-white hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900";
-              if (showState && c.is_correct) cls = "border-emerald-400 bg-emerald-50 text-emerald-900";
-              else if (showState && isPicked && !c.is_correct) cls = "border-rose-400 bg-rose-50 text-rose-900 anim-shake";
-              else if (showState) cls = "border-zinc-200 bg-zinc-50 text-zinc-400 opacity-70";
+              let cls = "border-[#A6E1FA] bg-[#D9F3FF] text-[#1A5670] hover:border-[#43AFDE] hover:bg-[#C5ECFF]";
+              if (showState && c.is_correct) cls = "border-[#54C152] bg-[#D2FFD1] text-[#246B22]";
+              else if (showState && isPicked && !c.is_correct) cls = "border-[#F43F5E] bg-[#FFE4E6] text-[#7A1622] anim-shake";
+              else if (showState) cls = "border-slate-200 bg-slate-50 text-slate-500 opacity-70";
               return (
                 <li key={c.id}>
                   <button
                     disabled={!!picked}
                     onClick={() => onPick(c.id)}
-                    className={`group flex w-full items-start gap-3 rounded-2xl border-2 px-4 py-3 text-left transition ${cls}`}
+                    className={`group flex w-full items-start gap-3 rounded-3xl border-2 px-5 py-4 text-left transition ${cls}`}
                   >
                     <span className={`grid h-7 w-7 shrink-0 place-items-center rounded-full text-xs font-extrabold ${t.bgChip} ${t.textStrong}`}>
                       {c.id.toUpperCase()}
                     </span>
                     <span className="flex-1 text-sm font-medium">{c.text}</span>
-                    {showState && c.is_correct && <span className="text-emerald-600 font-bold">✓</span>}
-                    {showState && isPicked && !c.is_correct && <span className="text-rose-600 font-bold">✗</span>}
+                    {showState && c.is_correct && <span className="text-[#246B22] font-bold">✓</span>}
+                    {showState && isPicked && !c.is_correct && <span className="text-[#7A1622] font-bold">✗</span>}
                   </button>
                 </li>
               );
@@ -187,8 +187,8 @@ function Play({
           {pickedChoice && (
             <div className="mt-5 anim-pop">
               <div className={`rounded-2xl border-2 p-4 ${pickedChoice.is_correct
-                ? "border-emerald-300 bg-emerald-50 text-emerald-900"
-                : "border-rose-300 bg-rose-50 text-rose-900"}`}>
+                ? "border-[#54C152] bg-[#D2FFD1] text-[#246B22]"
+                : "border-[#F43F5E] bg-[#FFE4E6] text-[#7A1622]"}`}>
                 <div className="text-xs font-bold uppercase tracking-wider">
                   {pickedChoice.is_correct ? "Best move" : "Not quite"} · {pickedChoice.points >= 0 ? "+" : ""}{pickedChoice.points} pts
                 </div>

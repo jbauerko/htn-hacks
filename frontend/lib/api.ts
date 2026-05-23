@@ -88,6 +88,33 @@ export type RadioResponse = {
   transmissions: Transmission[];
 };
 
+export type AdventureChoice = {
+  id: string;
+  text: string;
+  next: string;
+  points: number;
+  outcome: string;
+};
+export type AdventureNode = {
+  id: string;
+  is_start?: boolean;
+  is_ending?: boolean;
+  scene_title?: string | null;
+  narration?: string | null;
+  label?: string | null;
+  vibe?: "triumph" | "mixed" | "disaster" | "weird" | null;
+  epilogue?: string | null;
+  choices: AdventureChoice[];
+};
+export type AdventureResponse = {
+  module_id: string;
+  module_name: string;
+  title: string;
+  intro: string;
+  start_node_id: string;
+  nodes: AdventureNode[];
+};
+
 export type StorySpan = {
   id: string;
   text: string;
@@ -118,6 +145,19 @@ async function getJSON<T>(path: string): Promise<T> {
   return (await res.json()) as T;
 }
 
+async function postJSON<T>(path: string): Promise<T> {
+  const res = await fetch(`${API_BASE}${path}`, {
+    method: "POST",
+    headers: { "content-type": "application/json" },
+    cache: "no-store",
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`POST ${path} → ${res.status} ${res.statusText}\n${body}`);
+  }
+  return (await res.json()) as T;
+}
+
 export const api = {
   listModules: () => getJSON<ModuleSummary[]>("/modules"),
   getModule: (id: string) => getJSON<ModuleDetail>(`/modules/${id}`),
@@ -126,4 +166,7 @@ export const api = {
   triage: (id: string) => getJSON<TriageResponse>(`/modules/${id}/triage`),
   radio: (id: string) => getJSON<RadioResponse>(`/modules/${id}/radio`),
   violations: (id: string) => getJSON<ViolationsResponse>(`/modules/${id}/violations`),
+  adventure: (id: string) => getJSON<AdventureResponse>(`/modules/${id}/adventure`),
+  regenerateAdventure: (id: string) =>
+    postJSON<AdventureResponse>(`/modules/${id}/adventure/regenerate`),
 };

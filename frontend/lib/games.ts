@@ -1,7 +1,7 @@
 // Catalogue of mini-games we expose in the per-module game picker.
 // Adding a new game here + a /play/<id> page is all it takes to show up.
 
-export type GameId = "scenario" | "matching" | "triage" | "radio" | "violations";
+export type GameId = "scenario" | "matching" | "triage" | "radio" | "violations" | "adventure";
 
 export type GameMeta = {
   id: GameId;
@@ -46,5 +46,12 @@ export const GAMES: GameMeta[] = [
     tagline: "Read the shift. Tap every rule that got broken.",
     emoji: "🕵️",
     badge: "OBSERVE",
+  },
+  {
+    id: "adventure",
+    title: "Pick-Your-Path",
+    tagline: "One shift, five decisions, weird endings. Your call.",
+    emoji: "📖",
+    badge: "BRANCHING",
   },
 ];

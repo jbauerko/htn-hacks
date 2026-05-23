@@ -1,8 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #faf7ff;
-  --foreground: #1a1330;
+  --background: #FFFFFF;
+  --surface:    #FFFFFF;
+  --sidebar:    #F3F4F6;   /* reserved for future side panel */
+  --foreground: #111827;   /* slate-900-ish, strong contrast on white */
+  --muted:      #4B5563;   /* slate-600 for secondary copy */
+  --subtle:     #6B7280;   /* slate-500 for tertiary copy */
+  --hairline:   #E5E7EB;   /* slate-200 for dividers/borders */
 }
 
 @theme inline {
@@ -12,20 +17,10 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0e0820;
-    --foreground: #f5f0ff;
-  }
-}
+/* The app is intentionally white-only for the hackathon brief; no dark mode. */
 
 body {
-  background:
-    radial-gradient(circle at 0% 0%, rgba(255, 200, 220, 0.35), transparent 40%),
-    radial-gradient(circle at 100% 0%, rgba(180, 200, 255, 0.35), transparent 40%),
-    radial-gradient(circle at 50% 100%, rgba(200, 255, 220, 0.3), transparent 40%),
-    var(--background);
-  background-attachment: fixed;
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
@@ -53,8 +48,8 @@ body {
   100% { transform: translate3d(calc(var(--x, 0) + var(--drift, 0px)), 110vh, 0) rotate(720deg); opacity: 0.9; }
 }
 @keyframes pulse-ring {
-  0%   { box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.5); }
-  100% { box-shadow: 0 0 0 24px rgba(99, 102, 241, 0); }
+  0%   { box-shadow: 0 0 0 0 rgba(67, 175, 222, 0.45); }
+  100% { box-shadow: 0 0 0 24px rgba(67, 175, 222, 0); }
 }
 @keyframes countdown-bar {
   0%   { transform: scaleX(1); }

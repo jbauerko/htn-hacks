@@ -142,33 +142,33 @@ function Play({
             📻 Channel 2 · live
           </span>
           {combo >= 2 && (
-            <span className="rounded-full bg-amber-100 px-2 py-0.5 font-bold text-amber-700 anim-pop">
+            <span className="rounded-full bg-[#FEF3C7] px-2 py-0.5 font-bold text-[#7C4E04] anim-pop">
               ⚡ {combo}× combo
             </span>
           )}
         </div>
 
-        {/* Walkie-talkie body */}
-        <div key={current.id} className="anim-pop rounded-3xl bg-zinc-900 p-4 text-white shadow-xl ring-2 ring-zinc-700">
+        {/* Walkie-talkie body — intentionally dark to feel like a real handset */}
+        <div key={current.id} className="anim-pop rounded-3xl bg-slate-900 p-4 text-white shadow-xl ring-2 ring-slate-700">
           <div className="flex items-center gap-2">
-            <span className={`grid h-7 w-7 place-items-center rounded-full text-xs font-bold ${frac > 0 ? "bg-emerald-500 animate-pulse" : "bg-zinc-700"}`}>
+            <span className={`grid h-7 w-7 place-items-center rounded-full text-xs font-bold ${frac > 0 ? "bg-[#54C152] animate-pulse" : "bg-slate-700"}`}>
               {frac > 0 ? "●" : "○"}
             </span>
-            <span className="text-xs font-bold uppercase tracking-wider text-zinc-400">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-300">
               {current.callsign}
             </span>
-            <span className="ml-auto text-xs tabular-nums text-zinc-400">
+            <span className="ml-auto text-xs tabular-nums text-slate-300">
               ⏱ {secondsLeft.toFixed(1)}s
             </span>
           </div>
 
-          <div className="mt-3 rounded-2xl bg-zinc-800 p-4 font-mono text-sm leading-relaxed">
-            <span className="text-emerald-400">»</span> {current.message}
+          <div className="mt-3 rounded-2xl bg-slate-800 p-4 font-mono text-sm leading-relaxed">
+            <span className="text-[#A8F0A4]">»</span> {current.message}
           </div>
 
-          <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-zinc-800">
+          <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-slate-800">
             <div
-              className="h-full bg-emerald-400 transition-[width] duration-100"
+              className="h-full bg-[#A8F0A4] transition-[width] duration-100"
               style={{ width: `${frac * 100}%` }}
             />
           </div>
@@ -179,11 +179,11 @@ function Play({
           {current.choices.map((c) => {
             const isPicked = feedback?.pickedId === c.id;
             const isCorrect = feedback && c.is_correct;
-            let cls = `border-zinc-200 bg-white hover:border-zinc-400 hover:bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900`;
+            let cls = `border-slate-200 bg-white text-slate-800 hover:border-slate-400 hover:bg-slate-50`;
             if (feedback) {
-              if (isCorrect) cls = "border-emerald-400 bg-emerald-50 text-emerald-800";
-              else if (isPicked) cls = "border-rose-400 bg-rose-50 text-rose-800 anim-shake";
-              else cls = "border-zinc-200 bg-zinc-50 text-zinc-400 opacity-70";
+              if (isCorrect) cls = "border-[#54C152] bg-[#D2FFD1] text-[#246B22]";
+              else if (isPicked) cls = "border-[#F43F5E] bg-[#FFE4E6] text-[#7A1622] anim-shake";
+              else cls = "border-slate-200 bg-slate-50 text-slate-500 opacity-70";
             }
             return (
               <button
@@ -200,8 +200,8 @@ function Play({
 
         {feedback && (
           <div className={`mt-4 rounded-2xl border-2 p-4 anim-pop ${feedback.correct
-            ? "border-emerald-300 bg-emerald-50 text-emerald-900"
-            : "border-rose-300 bg-rose-50 text-rose-900"}`}>
+            ? "border-[#54C152] bg-[#D2FFD1] text-[#246B22]"
+            : "border-[#F43F5E] bg-[#FFE4E6] text-[#7A1622]"}`}>
             <div className="text-xs font-bold uppercase tracking-wider">
               {feedback.correct ? `Copy that · +${20 + feedback.bonus}` : feedback.pickedId === null ? "Frozen on the air" : "Bad call"}
             </div>
@@ -209,7 +209,7 @@ function Play({
           </div>
         )}
 
-        <div className="mt-3 text-center text-xs text-zinc-400">
+        <div className="mt-3 text-center text-xs text-slate-500">
           +20 base · +2 per second remaining · +3× combo bonus · −10 miss
         </div>
       </div>

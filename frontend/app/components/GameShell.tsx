@@ -6,7 +6,8 @@ import type { GameMeta } from "@/lib/games";
 
 /**
  * Header bar shown on every game page. Shows the back arrow, role icon,
- * game title, and a live score readout.
+ * game title, and a live score readout. White background, light hairline
+ * border below.
  */
 export function GameTopBar({
   moduleId,
@@ -24,16 +25,16 @@ export function GameTopBar({
   moduleIcon: string;
   game: GameMeta;
   score: number;
-  total?: string | number;   // e.g. "3 / 10" — position indicator
+  total?: string | number;
   best?: number;
 }) {
   const t = theme(moduleColor);
   return (
-    <div className="sticky top-0 z-30 backdrop-blur border-b border-zinc-200/70 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70">
+    <div className="sticky top-0 z-30 border-b border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex max-w-5xl items-center gap-4 px-4 py-3">
         <Link
           href={`/modules/${moduleId}`}
-          className={`grid h-10 w-10 place-items-center rounded-full text-zinc-600 hover:bg-zinc-100 dark:hover:bg-zinc-800`}
+          className="grid h-10 w-10 place-items-center rounded-full text-slate-700 hover:bg-slate-100"
           aria-label="Back to games"
         >
           ←
@@ -44,11 +45,11 @@ export function GameTopBar({
         </div>
 
         <div className="min-w-0 flex-1">
-          <div className="truncate text-sm font-medium text-zinc-500 dark:text-zinc-400">
+          <div className="truncate text-sm font-medium text-slate-500">
             {moduleName}
           </div>
           <div className="flex items-center gap-2">
-            <span className="text-base font-bold">{game.emoji} {game.title}</span>
+            <span className="text-base font-bold text-slate-900">{game.emoji} {game.title}</span>
             <span className={`hidden sm:inline rounded-full px-2 py-0.5 text-[10px] font-bold tracking-wider ${t.bgChip} ${t.textStrong}`}>
               {game.badge}
             </span>
@@ -58,20 +59,20 @@ export function GameTopBar({
         <div className="flex items-center gap-3 text-right">
           {typeof best === "number" && best > 0 && (
             <div className="hidden md:block">
-              <div className="text-[10px] uppercase tracking-wider text-zinc-400">Best</div>
-              <div className="text-sm font-bold text-zinc-500">{best}</div>
+              <div className="text-[10px] uppercase tracking-wider text-slate-500">Best</div>
+              <div className="text-sm font-bold text-slate-700">{best}</div>
             </div>
           )}
           <div>
-            <div className="text-[10px] uppercase tracking-wider text-zinc-400">Score</div>
+            <div className="text-[10px] uppercase tracking-wider text-slate-500">Score</div>
             <div className={`text-xl font-extrabold ${t.textStrong} tabular-nums`}>
               {score}
             </div>
           </div>
           {total !== undefined && (
             <div className="hidden sm:block">
-              <div className="text-[10px] uppercase tracking-wider text-zinc-400">Pos</div>
-              <div className="text-sm font-bold text-zinc-500 tabular-nums">{total}</div>
+              <div className="text-[10px] uppercase tracking-wider text-slate-500">Pos</div>
+              <div className="text-sm font-bold text-slate-700 tabular-nums">{total}</div>
             </div>
           )}
         </div>
@@ -122,21 +123,21 @@ export function ScoreSummary({
 
   return (
     <div className="mx-auto mt-10 max-w-xl px-4 anim-pop">
-      <div className={`rounded-3xl border-2 ${t.borderStrong} bg-white dark:bg-zinc-900 p-8 text-center shadow-xl`}>
-        <div className={`mx-auto grid h-20 w-20 place-items-center rounded-2xl text-4xl ${t.bgGradient} text-white shadow-lg`}>
+      <div className={`rounded-3xl border-2 ${t.borderStrong} bg-white p-8 text-center shadow-xl`}>
+        <div className={`mx-auto grid h-20 w-20 place-items-center rounded-2xl text-4xl ${t.bgGradient} shadow-md`}>
           {game.emoji}
         </div>
-        <div className="mt-5 text-2xl font-extrabold">{title}</div>
-        <div className="text-sm text-zinc-500 dark:text-zinc-400">{blurb}</div>
+        <div className="mt-5 text-2xl font-extrabold text-slate-900">{title}</div>
+        <div className="text-sm text-slate-600">{blurb}</div>
 
         <div className="mt-6 grid grid-cols-3 gap-3">
           <Stat label="Score" value={String(score)} accent={t.textStrong} />
           <Stat label="Accuracy" value={`${accuracy}%`} accent={t.textStrong} />
-          <Stat label="Best" value={String(best)} accent={isNewBest ? "text-amber-500" : "text-zinc-500"} />
+          <Stat label="Best" value={String(best)} accent={isNewBest ? "text-[#F59E0B]" : "text-slate-700"} />
         </div>
 
         {isNewBest && (
-          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-amber-100 px-3 py-1 text-sm font-bold text-amber-700 anim-pop">
+          <div className="mt-4 inline-flex items-center gap-2 rounded-full bg-[#FEF3C7] px-3 py-1 text-sm font-bold text-[#7C4E04] anim-pop">
             ⭐ New personal best!
           </div>
         )}
@@ -150,7 +151,7 @@ export function ScoreSummary({
           </button>
           <Link
             href={`/modules/${moduleId}`}
-            className="rounded-full border-2 border-zinc-200 px-6 py-3 font-bold text-zinc-700 hover:bg-zinc-50 dark:border-zinc-700 dark:text-zinc-200 dark:hover:bg-zinc-800"
+            className="rounded-full border-2 border-slate-200 px-6 py-3 font-bold text-slate-700 hover:bg-slate-50"
           >
             Pick another game
           </Link>
@@ -162,8 +163,8 @@ export function ScoreSummary({
 
 function Stat({ label, value, accent }: { label: string; value: string; accent: string }) {
   return (
-    <div className="rounded-2xl bg-zinc-50 dark:bg-zinc-800 p-3">
-      <div className="text-[10px] uppercase tracking-wider text-zinc-400">{label}</div>
+    <div className="rounded-2xl bg-slate-50 p-3 ring-1 ring-slate-200">
+      <div className="text-[10px] uppercase tracking-wider text-slate-500">{label}</div>
       <div className={`text-xl font-extrabold tabular-nums ${accent}`}>{value}</div>
     </div>
   );
@@ -178,7 +179,7 @@ export function ScoreFloat({ value }: { value: number }) {
   return (
     <span
       className={`anim-float pointer-events-none absolute text-2xl font-extrabold ${
-        positive ? "text-emerald-500" : "text-rose-500"
+        positive ? "text-[#54C152]" : "text-[#F43F5E]"
       }`}
     >
       {positive ? "+" : ""}{value}
