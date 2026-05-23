@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "VolunteerModule",
+  "description": "Domain knowledge for a single volunteer speciality. Contains no questions or scoring — the application generates exercises from this content.",
+  "type": "object",
+  "required": ["id", "name", "description", "icon", "color", "knowledge"],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Unique slug for this module. Must match the filename (e.g. 'registration' for registration.yaml).",
+      "examples": ["registration", "safety-marshal", "food-and-beverage"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name shown in the UI.",
+      "examples": ["Registration Desk", "Safety Marshal", "Food & Beverage"]
+    },
+    "description": {
+      "type": "string",
+      "description": "One or two sentences describing the volunteer role and its importance."
+    },
+    "icon": {
+      "type": "string",
+      "description": "A single emoji that represents this role.",
+      "examples": ["🎟️", "🦺", "🍕", "🎤", "🖥️"]
+    },
+    "color": {
+      "type": "string",
+      "description": "Tailwind color name used for theming the module card and game screen.",
+      "enum": ["indigo", "emerald", "amber", "rose", "violet", "cyan", "orange", "sky", "teal", "pink"]
+    },
+    "knowledge": {
+      "type": "array",
+      "description": "Core facts, procedures, and guidelines volunteers must understand.",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["title", "content"],
+        "additionalProperties": false,
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Short heading for this knowledge item."
+          },
+          "content": {
+            "type": "string",
+            "description": "Full explanation of the concept, procedure, or policy. Write in plain language as if briefing a new volunteer."
+          },
+          "tags": {
+            "type": "array",
+            "description": "Optional labels for filtering or emphasis. Use values like 'critical', 'procedure', 'policy', 'safety', 'escalation', 'communication'.",
+            "items": { "type": "string" },
+            "default": []
+          }
+        }
+      }
+    },
+    "rules": {
+      "type": "array",
+      "description": "Short, non-negotiable policies the volunteer must always follow. Each rule is a single sentence.",
+      "items": { "type": "string" },
+      "default": []
+    },
+    "glossary": {
+      "type": "array",
+      "description": "Event-specific terms or jargon a volunteer needs to know.",
+      "items": {
+        "type": "object",
+        "required": ["term", "definition"],
+        "additionalProperties": false,
+        "properties": {
+          "term": { "type": "string" },
+          "definition": { "type": "string" }
+        }
+      },
+      "default": []
+    }
+  }
+}

@@ -1,0 +1,67 @@
+# Example volunteer module — replace with your actual event content.
+# Validate against: backend/data/module_schema.json
+
+id: example-registration
+name: Registration Desk
+description: >
+  Registration volunteers are the first face participants see. They verify
+  check-ins, hand out materials, and set a welcoming tone for the whole event.
+icon: 🎟️
+color: indigo
+
+knowledge:
+  - title: Check-in Procedure
+    content: >
+      Always verify a participant's identity using the primary registration list first.
+      Search by last name, then first name. If the name is not found, check the backup
+      spreadsheet before taking any other action. Never hand out materials without a
+      successful match in at least one of these two sources.
+    tags: [procedure, critical]
+
+  - title: Handling Name Discrepancies
+    content: >
+      Typos and name variations are common. Try partial matches and common alternate
+      spellings. If a participant registered under a company or team name, look that up
+      instead. When in doubt, ask the participant for their confirmation email — the
+      order ID can be used to locate the record directly.
+    tags: [procedure]
+
+  - title: Lost or Forgotten Ticket
+    content: >
+      Ask the participant for a government-issued photo ID and their registration email
+      address. Cross-reference both against the system. If confirmed, you may issue
+      materials but must note the incident in the exception log and notify a supervisor.
+    tags: [policy, escalation]
+
+  - title: Line Management
+    content: >
+      Keep lines moving efficiently. Have one volunteer dedicated to looking up names,
+      one handing out materials, and one directing traffic. Participants who need extra
+      assistance (accessibility accommodations, complex issues) should be escorted to
+      the dedicated help station so they don't block the main queue.
+    tags: [operations]
+
+  - title: Accessibility Accommodations
+    content: >
+      Participants with accessibility requests are flagged in the system with a ♿ symbol.
+      Proactively offer assistance. Materials for these participants are in the marked
+      box at the left end of the desk. Never draw attention to the accommodation in a
+      way that singles out the participant publicly.
+    tags: [policy, critical]
+
+rules:
+  - Never issue a wristband or badge without a verified match in the registration system.
+  - Escalate all disputes and exceptions to a supervisor — do not make unilateral decisions.
+  - Check-in closes at 6 pm; participants arriving after must be directed to the info desk.
+  - Personal information (emails, phone numbers) seen during check-in is confidential.
+  - Always greet participants before asking for their name.
+
+glossary:
+  - term: Primary list
+    definition: The official CSV export from the registration platform, loaded into the tablet app.
+  - term: Backup spreadsheet
+    definition: A Google Sheet maintained by the organizing team that includes late registrations and manual additions.
+  - term: Exception log
+    definition: The shared document where non-standard check-in events are recorded for the organizing team to review.
+  - term: Help station
+    definition: A separate table staffed by a senior volunteer for handling complex issues away from the main queue.
