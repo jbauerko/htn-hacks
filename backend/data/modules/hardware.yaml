@@ -10,8 +10,9 @@ color: pink
 knowledge:
   - title: Your Lead, Organizer, and Required Training
     content: >
-      Your Volunteer Lead is Rohan Tuli (365-778-0651). The Hardware Organizer
-      is Jeremy Su, who you escalate hardware-specific issues to. Review the
+      Your Hardware Volunteer Lead (VL) coordinates shift-level issues. The Hardware
+      Organizer is who you escalate hardware-specific issues to. Contact either via
+      Slack or your shift assignment. Review the
       Hardware Training 2025 slides before your shift. Hardware shifts come in
       two flavours, and you will be assigned to one for your shift — know which
       one before you arrive.
@@ -49,7 +50,7 @@ knowledge:
     content: >
       If a hardware tool stops working, first check whether it is just one
       volunteer's tool or the system in general. If it is more than one,
-      alert Rohan. There is a Google Sheet for tracking broken hardware —
+      alert your VL. There is a Google Sheet for tracking broken hardware —
       log the failure there so the team has a record.
     tags: [procedure, escalation]
 
@@ -58,15 +59,15 @@ knowledge:
       If a hacker returns hardware that is defective, confirm they were the
       one who checked it out, then give them a replacement from the spare
       stock kept on the side. If hardware comes back damaged (broken from
-      use), contact Olivia Wang, who is the relevant Hardware Organizer for
-      damaged items — do not just put damaged items back into circulation.
+      use), contact the Hardware Organizer responsible for damaged equipment —
+      do not just put damaged items back into circulation.
     tags: [procedure, escalation]
 
   - title: Possible Hardware Theft
     content: >
       If you see someone trying to take hardware without checking it out, or
       hardware that should be present has gone missing, escalate immediately
-      to Jeremy Su (Hardware Organizer) or the Logistics Leads. Do not try
+      to the Hardware Organizer or the Logistics Leads. Do not try
       to confront a suspected thief alone — your job is to report, not
       enforce.
     tags: [safety, escalation, critical]
@@ -84,7 +85,7 @@ rules:
   - Hand tools (glue guns, heat guns, soldering irons, wire tools) never leave the Hardware Corner.
   - Only one team is allowed in the drone room at a time.
   - Confirm that a hacker checked out a piece of hardware before issuing a defective replacement.
-  - Escalate suspected hardware theft to Jeremy Su or Logistics Leads — do not confront alone.
+  - Escalate suspected hardware theft to the Hardware Organizer or Logistics Leads — do not confront alone.
   - In overcrowding, prioritize hand-tool and drone-room users; ask others to leave first.
 
 glossary:
@@ -92,9 +93,7 @@ glossary:
     definition: The supervised area for hands-on hardware work — soldering, gluing, wire work. Hand tools never leave this corner.
   - term: Drone room
     definition: A dedicated room for drone testing, used by only one team at a time and supervised by Hardware Checkout volunteers.
-  - term: Jeremy Su
-    definition: The Hardware Organizer — escalation point for theft, major hardware issues, and policy questions.
-  - term: Olivia Wang
-    definition: Hardware Organizer responsible for damaged hardware — route physically broken items to her.
-  - term: Rohan Tuli
-    definition: The Hardware Volunteer Lead (365-778-0651) — your first contact for shift-level issues and broken tools.
+  - term: Hardware Organizer
+    definition: The organizer responsible for hardware — escalation point for theft, major hardware issues, policy questions, and damaged equipment.
+  - term: Hardware Volunteer Lead
+    definition: Your VL for hardware shifts — first contact for shift-level issues and broken tools.

@@ -10,8 +10,8 @@ color: emerald
 knowledge:
   - title: Your Leads and Required Training
     content: >
-      Your Volunteer Leads are Evelina Zheng (647-881-3162) and Nadeen Findakly
-      (416-227-1340). Review the Floor Patrol and Security General Training Slides
+      Your Floor Patrol Volunteer Leads (VLs) coordinate this section — contact them
+      via Slack or your shift assignment. Review the Floor Patrol and Security General Training Slides
       before your shift — Floor Patrol shares its training with Security and you
       should know both roles' content. You may be temporarily reassigned to
       another role during a shift if a section needs extra help.
@@ -70,7 +70,7 @@ knowledge:
 
   - title: Responding to an Injured Hacker
     content: >
-      If you find an injured hacker, the order is: tell Adam via Slack or your
+      If you find an injured hacker, the order is: notify the Volunteer Organizer via Slack or your
       shift lead, call Campus Response Team (CRT) on a walkie-talkie if one is
       available or have an organizer contact CRT if not, locate any nearby
       volunteer with first-aid training (identified by a red sticker on their
@@ -110,7 +110,7 @@ rules:
   - Never attempt to clean a large spill alone — report it to your VL.
   - Always stay with an injured person until CRT arrives.
   - Get an organizer escort before taking anything from the storage containers.
-  - Report incidents to a VL or Adam — never handle escalations alone.
+  - Report incidents to a VL or the Volunteer Organizer — never handle escalations alone.
   - Red sticker on a badge means first-aid trained — find them fast in emergencies.
 
 glossary:

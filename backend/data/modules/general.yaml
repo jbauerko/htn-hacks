@@ -84,19 +84,18 @@ knowledge:
       You should have received an email invite to the Hack the North Slack — download
       the app. Three channels matter most. #volunteer-lounge is where you post
       questions during shifts and where shift-specific announcements appear; a
-      Volunteer Lead or Adam will respond. #announcement-volunteer carries general
+      Volunteer Lead or the Volunteer Organizer will respond. #announcement-volunteer carries general
       reminders relevant to all volunteers. #questions is the Q&A chatbot for
-      general questions. If you cannot access Slack, email adam@hackthenorth.com.
+      general questions. If you cannot access Slack, contact the Volunteer Organizer.
     tags: [communication]
 
   - title: Reporting Concerns
     content: >
-      For concerns about shift logistics or event logistics in general, contact Adam
-      Selim (Volunteer Organizer) via Slack DM or adam@hackthenorth.com. While on
-      shift, contact your Volunteer Lead in person or via Slack for any concern that
-      arises. If the concern is about a Volunteer Lead or another Organizer
-      themselves, go directly to Adam — do not raise it through the person it
-      concerns.
+      For concerns about shift logistics or event logistics in general, contact the
+      Volunteer Organizer via Slack DM. While on shift, contact your Volunteer Lead
+      in person or via Slack for any concern that arises. If the concern is about
+      a Volunteer Lead or another Organizer themselves, go directly to the Volunteer
+      Organizer — do not raise it through the person it concerns.
     tags: [escalation, policy]
 
   - title: The Buddy System
@@ -138,8 +137,8 @@ knowledge:
 
   - title: Scanner Tool Technical Issues
     content: >
-      For Scanner Tool account or login problems, contact Daniel Chen on Slack or
-      at daniel.chen@hackthenorth.com. For in-event Scanner Tool problems during a
+      For Scanner Tool account or login problems, contact Scanner Tool support via
+      Slack (ask in #volunteer-lounge). For in-event Scanner Tool problems during a
       shift, go to the Help Desk or ask your VL. Badge codes are always a string
       of 4 words separated by hyphens — if a code is not in that format, it is
       invalid and you should get an organizer to help.
@@ -181,7 +180,7 @@ rules:
   - Never enter the sponsor bay, hacker sleeping area, or restricted zones.
   - Always check out by exchanging your badge for your ID before leaving the event.
   - Anyone in E5/E7 without a visible badge must be asked to show one or leave.
-  - Escalate concerns about a VL or Organizer directly to Adam, never through that person.
+  - Escalate concerns about a VL or Organizer directly to the Volunteer Organizer, never through that person.
   - Tell your VL before taking any break — never just disappear from your post.
   - Leave the building after your shift unless your next shift is within an hour.
   - Take only one snack at a time from the Volunteer HQ.
